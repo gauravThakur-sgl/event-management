@@ -24,7 +24,7 @@ export const Footer = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-56 pt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 justify-center items-center gap-5 lg:gap-56 pt-20">
           <ul className={`${listStyle}`}>
             <li className="text-2xl font-medium text-white">Product</li>
             <li>Features</li>

@@ -4,9 +4,9 @@ import { Button } from "./ui/button";
 
 export const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-100 to-green-200 mx-4 rounded-b-3xl">
+    <div className="bg-gradient-to-b from-gray-100 to-green-100 mx-4 rounded-b-3xl">
       <div className="flex justify-center items-center pt-5">
-        <Badge color="green" className="bg-green-50 hover:bg-green-50">
+        <Badge color="green" className="bg-green-50 hover:bg-green-50 shadow-sm">
           <div className="flex justify-center items-center gap-3 text-green-600 text-base px-2 py-1">
             <FolderCheck size={16} className="text-green-600 font-semibold" />
             <p>Organise your Events</p>
@@ -14,12 +14,12 @@ export const Hero = () => {
         </Badge>
       </div>
       <div className="mt-10 flex flex-col justify-center items-center mx-4">
-        <p className="font-semibold text-5xl tracking-tight text-center">Simplify Your WorkFlow, Maximize your productivity</p>
-        <p className=" text-gray-500 text-lg mt-3 text-center">
+        <h1 className="font-bold text-5xl lg:text-7xl tracking-tight text-center">Simplify Your WorkFlow <br /> Maximize your productivity</h1>
+        <p className="text-gray-500 text-lg mt-6 text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis
           ac neque.
         </p>
-        <Button className="bg-green-600 hover:bg-green-700 rounded-full px-10 py-6 mt-10">
+        <Button className="bg-green-600 hover:bg-green-700 rounded-full px-10 py-6 mt-10 shadow">
           <span className="inline-flex justify-center items-center text-lg font-medium">Get Started</span>
         </Button>
       </div>

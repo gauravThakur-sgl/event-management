@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
+  @layer components {
+    .section-title {
+      @apply text-[96px] md:text-xl font-semibold tracking-tight text-center;
+    }
+    .section-subtitle {
+      @apply text-gray-500 text-lg mt-3 text-center;
+    }
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
