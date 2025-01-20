@@ -11,10 +11,10 @@ export const CardFeatureSection = () => {
             </div>
           </Badge>
           <div className="mt-6">
-            <h2 className="font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 lg:px-96">
+            <h2 className="section-title">
               Effortless scheduling with Event Management for every event in your day
             </h2>
-            <p className="text-gray-500 text-lg mt-6 text-center">
+            <p className="section-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,
               mattis ac neque.
             </p>

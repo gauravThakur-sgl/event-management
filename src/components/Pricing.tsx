@@ -70,7 +70,7 @@ export const Pricing = () => {
               key={index}
               className={`p-4 md:p-6 shadow-lg rounded-lg gap-8 text-white w-96 hover:scale-105 hover:transition-all hover:duration-200 ${
                 index === 1
-                  ? "bg-green-600 text-white inset-0 bg-[linear-gradient(to_right,#FFFFFF1A_1px,transparent_1px),linear-gradient(to_bottom,#FFFFFF1A_1px,transparent_1px)] bg-[size:24px_24px]"
+                  ? "bg-green-600 text-white gridLines"
                   : "text-black bg-white"
               }`}
             >

@@ -2,7 +2,7 @@ export const Feature = () => {
   const logos = ["/notion-logo.svg", "/slack-logo.svg", "/relume-logo.svg", "/github-logo.svg", "/notion-logo.svg"];
   return (
     <div className="mt-10">
-      <p className="text-center text-gray-500 text-2xl font-semibold">Featuring the Our management software used by</p>
+      <p className="section-title">Featuring the Our management software used by</p>
       <div className="flex justify-center items-center gap-4 mt-6 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
         {logos.map((logo, index) => (
           <div key={index}>

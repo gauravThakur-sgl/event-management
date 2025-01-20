@@ -14,10 +14,10 @@ export const Hero = () => {
         </Badge>
       </div>
       <div className="mt-10 flex flex-col justify-center items-center mx-4">
-        <h1 className="font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 xl:px-64">
+        <h1 className="section-title">
           Simplify Your WorkFlow <br /> Maximize your productivity
         </h1>
-        <p className="text-gray-500 text-lg mt-6 text-center">
+        <p className="section-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis
           ac neque.
         </p>

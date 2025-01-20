@@ -10,10 +10,10 @@ export const Integrations = () => {
     <>
       <div className="h-screen bg-gradient-to-l from-white to-green-100 mx-4 rounded-b-xl">
         <div className="pt-20 flex flex-col justify-center items-center">
-          <h2 className="font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 lg:px-96">
+          <h2 className="section-title">
             Sync Events seamlessly <br /> with all the tools you use every day
           </h2>
-          <p className="text-gray-500 text-lg mt-3 text-center">
+          <p className="section-description">
             Connect your favorite apps and services to Event Management and automate your workflow.
           </p>
         </div>

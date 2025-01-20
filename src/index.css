@@ -57,3 +57,15 @@
     @apply font-roboto antialiased bg-background text-foreground;
   }
 }
+
+@layer components {
+  .gridLines {
+    @apply inset-0 bg-[linear-gradient(to_right,#FFFFFF1A_1px,transparent_1px),linear-gradient(to_bottom,#FFFFFF1A_1px,transparent_1px)] bg-[size:24px_24px];
+  }
+  .section-title {
+    @apply font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 xl:px-64;
+  }
+  .section-description {
+    @apply text-gray-500 text-lg mt-6 text-center;
+  }
+}
