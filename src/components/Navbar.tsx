@@ -36,13 +36,15 @@ export const Navbar = () => {
       </div>
       <div className="flex justify-center items-center gap-2 px-2">
         <Menu className="md:hidden" />
-        <div className="flex justify-center items-center">
-          <Button variant="outline" className="border-none rounded-full px-8">
-            Login
-          </Button>
-          <Button variant="default" className="bg-green-600 hover:bg-green-700 rounded-full px-8 shadow">
-            Signup
-          </Button>
+        <div className="hidden md:block">
+          <span className="flex justify-center items-center gap-2">
+            <Button variant="outline" className="border-none rounded-full px-8">
+              Login
+            </Button>
+            <Button variant="default" className="bg-green-600 hover:bg-green-700 rounded-full px-8 shadow">
+              Signup
+            </Button>
+          </span>
         </div>
       </div>
     </div>

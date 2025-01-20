@@ -5,9 +5,6 @@ export const Integrations = () => {
     "/relume-logo.svg",
     "/github-logo.svg",
     "/notion-logo.svg",
-    "/slack-logo.svg",
-    "/relume-logo.svg",
-    "/github-logo.svg",
   ];
   return (
     <>

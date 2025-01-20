@@ -1,5 +1,5 @@
 export const Footer = () => {
-  const listStyle = "flex flex-col justify-center items-start text-gray-400 gap-2";
+  const listStyle = "flex flex-col  items-start text-gray-400 gap-2";
   return (
     <div className="bg-black text-white">
       <div className="pt-28 mx-2 md:mx-40">
@@ -24,7 +24,7 @@ export const Footer = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20 xl:gap-56 pt-20">
+        <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-20 xl:gap-56 pt-20">
           <ul className={`${listStyle}`}>
             <li className="text-2xl font-medium text-white">Product</li>
             <li>Features</li>
