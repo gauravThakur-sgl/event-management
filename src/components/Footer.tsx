@@ -24,7 +24,7 @@ export const Footer = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 justify-center items-center gap-5 lg:gap-56 pt-20">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20 xl:gap-56 pt-20">
           <ul className={`${listStyle}`}>
             <li className="text-2xl font-medium text-white">Product</li>
             <li>Features</li>
@@ -65,9 +65,9 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-around items-center gap-2 py-10 border-t border-gray-400 mt-10">
+      <div className="flex flex-col justify-center md:flex-row  md:justify-around items-center gap-2 py-10 border-t border-gray-400 mt-10">
         <div>Terms and Conditions</div>
-        <div>© 2023 Event Management. All rights reserved.</div>
+        <div className="text-center">© 2023 Event Management. All rights reserved.</div>
         <div>Cookies Policy</div>
       </div>
     </div>

@@ -11,8 +11,8 @@ export const Integrations = () => {
   ];
   return (
     <>
-      <div className="h-screen bg-white">
-        <div className="mt-40 flex flex-col justify-center items-center mx-4">
+      <div className="h-screen bg-gradient-to-l from-white to-green-100 mx-4 rounded-b-xl">
+        <div className="pt-20 flex flex-col justify-center items-center">
           <h2 className="font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 lg:px-96">
             Sync Events seamlessly <br /> with all the tools you use every day
           </h2>

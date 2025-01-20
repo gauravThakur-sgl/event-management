@@ -1,37 +1,6 @@
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardDescription, CardTitle } from "./ui/card";
 export const CardFeatureSection = () => {
-  // const cardData = [
-  //   {
-  //     title: "Remainders that actually work",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec, mattis ac neque.",
-  //     icon: "https://img.icons8.com/ios/452/calendar.png",
-  //     imageData: {
-  //       src: "https://img.icons8.com/ios/452/calendar.png",
-  //       alt: "calendar",
-  //       title: "Popup Reminder meeting at 2:00 PM",
-  //     },
-  //   },
-  //   {
-  //     title: "See how your day looks like",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec, mattis ac neque.",
-  //     icon: "https://img.icons8.com/ios/452/calendar.png",
-  //   },
-  //   {
-  //     title: "Team up and get things done",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec, mattis ac neque.",
-  //     icon: "https://img.icons8.com/ios/452/calendar.png",
-  //   },
-  //   {
-  //     title: "One event calendar for all your needs",
-  //     description:
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec, mattis ac neque.",
-  //     icon: "https://img.icons8.com/ios/452/calendar.png",
-  //   },
-  // ];
   return (
     <>
       <div className="mt-24 bg-gradient-to-r from-white to-green-50 mx-4 pb-4 rounded-b-xl">
@@ -54,7 +23,7 @@ export const CardFeatureSection = () => {
           {/* Card Section */}
           <div className="flex flex-col gap-2 mt-10 px-10 lg:px-20">
             <div className="flex flex-col md:flex-row justify-center items-start gap-2">
-              <Card className="rounded-xl p-4 pb-10">
+              <Card className="rounded-xl p-4 pb-10 hover:scale-105 hover:transition-all hover:duration-200">
                 <CardTitle>Remainders that actually work</CardTitle>
                 <CardDescription className="text-md mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,
@@ -64,7 +33,7 @@ export const CardFeatureSection = () => {
                   <img src="" alt="icon" className="h-10 md:h-10 lg:h-20" />
                 </CardContent>
               </Card>
-              <Card className="rounded-xl p-4 md:w-9/12">
+              <Card className="rounded-xl p-4 md:w-9/12 hover:scale-105 hover:transition-all hover:duration-200">
                 <CardTitle>See how your day looks like</CardTitle>
                 <CardDescription className="text-md mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,
@@ -77,7 +46,7 @@ export const CardFeatureSection = () => {
             </div>
             {/* Second Row */}
             <div className="flex flex-col md:flex-row justify-center items-start gap-2">
-              <Card className="rounded-xl p-4 md:w-9/12">
+              <Card className="rounded-xl p-4 md:w-9/12 hover:scale-105 hover:transition-all hover:duration-200">
                 <CardTitle>Team up and get things done</CardTitle>
                 <CardDescription className="text-md mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,
@@ -87,7 +56,7 @@ export const CardFeatureSection = () => {
                   <img src="" alt="icon" className="h-10 md:h-10 lg:h-20" />
                 </CardContent>
               </Card>
-              <Card className="rounded-xl p-4 pb-10">
+              <Card className="rounded-xl p-4 pb-10 hover:scale-105 hover:transition-all hover:duration-400">
                 <CardTitle>One event calendar for all your needs</CardTitle>
                 <CardDescription className="text-md mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,

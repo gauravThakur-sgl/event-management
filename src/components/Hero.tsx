@@ -14,7 +14,7 @@ export const Hero = () => {
         </Badge>
       </div>
       <div className="mt-10 flex flex-col justify-center items-center mx-4">
-        <h1 className="font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 lg:px-96">
+        <h1 className="font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 xl:px-64">
           Simplify Your WorkFlow <br /> Maximize your productivity
         </h1>
         <p className="text-gray-500 text-lg mt-6 text-center">
@@ -27,7 +27,7 @@ export const Hero = () => {
       </div>
       <div className="pt-10 flex justify-center items-center m-4">
         <div className="bg-transparent rounded-lg shadow-2xl hidden md:block">
-          <img src="/product-image.png" alt="Hero"/>
+          <img src="/product-image.png" alt="Hero"  />
         </div>
       </div>
     </div>
