@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-100 to-green-100 mx-4 rounded-b-3xl">
+    <div className="md:h-screen overflow-hidden bg-gradient-to-b from-gray-100 to-green-100 mx-4 rounded-b-3xl">
       <div className="flex justify-center items-center pt-5">
         <Badge color="green" className="bg-green-50 hover:bg-green-50 shadow-sm">
           <div className="flex justify-center items-center gap-3 text-green-600 text-base px-2 py-1">
@@ -14,7 +14,9 @@ export const Hero = () => {
         </Badge>
       </div>
       <div className="mt-10 flex flex-col justify-center items-center mx-4">
-        <h1 className="font-bold text-5xl lg:text-7xl tracking-tight text-center">Simplify Your WorkFlow <br /> Maximize your productivity</h1>
+        <h1 className="font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 lg:px-96">
+          Simplify Your WorkFlow <br /> Maximize your productivity
+        </h1>
         <p className="text-gray-500 text-lg mt-6 text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis
           ac neque.
@@ -23,7 +25,11 @@ export const Hero = () => {
           <span className="inline-flex justify-center items-center text-lg font-medium">Get Started</span>
         </Button>
       </div>
-      <div className="pt-10 text-center pb-20">Hello</div>
+      <div className="pt-10 flex justify-center items-center m-4">
+        <div className="bg-transparent rounded-lg shadow-2xl hidden md:block">
+          <img src="/product-image.png" alt="Hero"/>
+        </div>
+      </div>
     </div>
   );
 };

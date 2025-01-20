@@ -4,6 +4,7 @@ import { Integrations } from "../components/Integrations";
 import { Footer } from "../components/Footer";
 import { Menu } from "lucide-react";
 import { Feature } from "../components/Feature";
+import { CardFeatureSection } from "../components/CardFeatureSection";
 
 export const LandingPage = () => {
   return (
@@ -54,6 +55,7 @@ export const LandingPage = () => {
       </div>
       <Hero />
       <Feature />
+      <CardFeatureSection />
       <Integrations />
       <Footer />
     </div>

@@ -13,7 +13,7 @@ export const Integrations = () => {
     <>
       <div className="h-screen bg-white">
         <div className="mt-40 flex flex-col justify-center items-center mx-4">
-          <h2 className="font-semibold text-7xl tracking-tight text-center">
+          <h2 className="font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 lg:px-96">
             Sync Events seamlessly <br /> with all the tools you use every day
           </h2>
           <p className="text-gray-500 text-lg mt-3 text-center">
