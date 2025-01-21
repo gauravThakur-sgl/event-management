@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 
@@ -18,7 +18,7 @@ export const Pricing = () => {
         "Integrations",
         "Basic support",
       ],
-      notIncluded: ["Priority support", "Advanced support", "Export support"],
+      notIncluded: ["expert support", "Dedicated account manager", "Custom fields", "Advanced analytics", "API access"],
     },
     {
       title: "Pro",
@@ -32,14 +32,12 @@ export const Pricing = () => {
         "Unlimited tasks and projects",
         "50GB storage",
         "Integrations",
-        "Priority support",
-        "Advanced support",
-        "Export support",
+        "Expert support",
+        "Custom fields",
+        "Advanced analytics",
       ],
       notIncluded: [
         "Dedicated account manager",
-        "Custom fields",
-        "Advanced analytics",
         "API access",
         "Advanced security features",
       ],
@@ -63,6 +61,7 @@ export const Pricing = () => {
         "API access",
         "Advanced security features",
       ],
+      notIncluded: [],
 
     },
   ];
@@ -100,6 +99,18 @@ export const Pricing = () => {
                     <div className="flex justify-start  gap-4">
                       <span className={`${item.title === "Pro" ? "" : "text-green-500"}`}>
                         <Check className={`h-5`} />
+                      </span>
+                      <p>{feature}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <ul className={`mt-6 ${item.title === "Pro" ? "text-white" : "text-gray-500"} space-y-4`}>
+                {item.notIncluded.map((feature, index) => (
+                  <li key={index}>
+                    <div className="flex justify-start  gap-4">
+                      <span className={`${item.title === "Pro" ? "" : "text-green-500"}`}>
+                        <X className={`h-5 text-red-500`} />
                       </span>
                       <p>{feature}</p>
                     </div>
