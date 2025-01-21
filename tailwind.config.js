@@ -1,3 +1,5 @@
+const { transform } = require('typescript');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -44,6 +46,15 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      animation: {
+        marquee: 'marquee 40s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-200%)' },
+        }
       },
       borderRadius: {
         lg: `var(--radius)`,

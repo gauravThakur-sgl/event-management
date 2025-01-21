@@ -18,6 +18,7 @@ export const Pricing = () => {
         "Integrations",
         "Basic support",
       ],
+      notIncluded: ["Priority support", "Advanced support", "Export support"],
     },
     {
       title: "Pro",
@@ -34,6 +35,13 @@ export const Pricing = () => {
         "Priority support",
         "Advanced support",
         "Export support",
+      ],
+      notIncluded: [
+        "Dedicated account manager",
+        "Custom fields",
+        "Advanced analytics",
+        "API access",
+        "Advanced security features",
       ],
     },
     {
@@ -55,11 +63,12 @@ export const Pricing = () => {
         "API access",
         "Advanced security features",
       ],
+
     },
   ];
   return (
     <div>
-      <div className="min-h-screen mx-2 pb-10 bg-green-50">
+      <div className="min-h-screen mx-4 mt-6 pb-10 bg-gradient-to-b from-white to-green-50">
         <h2 className="pt-20 font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 xl:px-64">Pricing</h2>
         <p className="text-gray-500 text-lg mt-6 text-center">
           Free forever. Upgrade for unlimited events, better security, and exclusive features.
@@ -69,9 +78,7 @@ export const Pricing = () => {
             <Card
               key={index}
               className={`p-4 md:p-6 shadow-lg rounded-lg gap-8 text-white w-72 lg:w-96 hover:scale-105 hover:transition-all hover:duration-200 ${
-                item.title === "Pro"
-                  ? "bg-green-600 text-white gridLines"
-                  : "text-black bg-white"
+                item.title === "Pro" ? "bg-green-600 text-white gridLines" : "text-black bg-white"
               }`}
             >
               <div className="flex justify-between items-center">

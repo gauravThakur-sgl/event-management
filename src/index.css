@@ -59,6 +59,9 @@
 }
 
 @layer components {
+  .logo-fade {
+    @apply [mask-image:linear-gradient(to_right,transparent,black,transparent)];
+  }
   .gridLines {
     @apply inset-0 bg-[linear-gradient(to_right,#FFFFFF1A_1px,transparent_1px),linear-gradient(to_bottom,#FFFFFF1A_1px,transparent_1px)] bg-[size:24px_24px];
   }
