@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export const Navbar = () => {
   return (
-    <div className="flex justify-between items-center p-4 md:px-20 xl:px-40">
+    <div className="flex justify-between items-center bg-white p-4 md:px-20 xl:px-40 sticky top-0 z-10">
       <h2 className="font-bold text-green-600">Event Management</h2>
       <div className="hidden lg:block">
         <ul className="flex justify-center items-center gap-4 text-lg text-slate-600">

@@ -68,29 +68,29 @@ export const Pricing = () => {
           {pricingTiers.map((item, index) => (
             <Card
               key={index}
-              className={`p-4 md:p-6 shadow-lg rounded-lg gap-8 text-white w-96 hover:scale-105 hover:transition-all hover:duration-200 ${
-                index === 1
+              className={`p-4 md:p-6 shadow-lg rounded-lg gap-8 text-white w-72 lg:w-96 hover:scale-105 hover:transition-all hover:duration-200 ${
+                item.title === "Pro"
                   ? "bg-green-600 text-white gridLines"
                   : "text-black bg-white"
               }`}
             >
               <div className="flex justify-between items-center">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
-                {index === 1 && (
+                {item.title === "Pro" && (
                   <span className="py-1 px-3 text-sm font-medium rounded-full shadow-lg bg-green-100 text-green-600">
                     Popular
                   </span>
                 )}
               </div>
               <p className="mt-6 font-semibold">
-                <span className="text-4xl font-bold tracking-tighter leading-none">${item.monthlyPrice}</span>
-                <span className={`${index === 1 ? "text-gray-200" : ""}`}>/month</span>
+                <span className="text-4xl font-bold ">${item.monthlyPrice}</span>
+                <span className={`${item.title === "Pro" ? "text-gray-200" : ""}`}>/month</span>
               </p>
-              <p className="mt-6 tracking-tight">{item.description}</p>
-              <ul className={`mt-6 ${index === 1 ? "text-white" : "text-gray-500"} space-y-4`}>
+              <p className="mt-6 ">{item.description}</p>
+              <ul className={`mt-6 ${item.title === "Pro" ? "text-white" : "text-gray-500"} space-y-4`}>
                 {item.features.map((feature, index) => (
                   <li key={index}>
-                    <div className="flex justify-start items-center gap-4">
+                    <div className="flex justify-start  gap-4">
                       <span className={`${item.title === "Pro" ? "" : "text-green-500"}`}>
                         <Check className={`h-5`} />
                       </span>
@@ -102,7 +102,7 @@ export const Pricing = () => {
               <span className="flex justify-center items-center">
                 <Button
                   className={` mt-6 ${
-                    index === 1
+                    item.title === "Pro"
                       ? "bg-white text-green-600 hover:bg-green-50 "
                       : "bg-green-50 shadow-sm text-green-600 hover:bg-green-100"
                   }`}

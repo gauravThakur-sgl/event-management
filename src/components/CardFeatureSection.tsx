@@ -20,49 +20,49 @@ export const CardFeatureSection = () => {
             </p>
           </div>
           {/* Card Section */}
-          <div className="flex flex-col gap-2 mt-10 px-10 lg:px-20">
+          <div className="flex flex-col gap-2 mt-10 px-2 lg:px-20">
             <div className="flex flex-col md:flex-row justify-center items-start gap-2">
-              <Card className="rounded-xl p-2 md:p-6 hover:scale-105 hover:transition-all hover:duration-200">
+              <Card className="rounded-xl p-4 md:p-6 hover:scale-105 hover:transition-all hover:duration-200">
                 <CardTitle>Remainders that actually work</CardTitle>
                 <CardDescription className="text-md mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,
                   mattis ac neque.
                 </CardDescription>
                 <CardContent className="rounded-xl bg-gray-100 p-2 mt-5 flex justify-center items-center">
-                  <img src="/cardImage-1.png" alt="icon" className="w-96 my-4" />
+                  <img src="/cardImage-1.svg" alt="icon" className="w-96 my-4" />
                 </CardContent>
               </Card>
-              <Card className="rounded-xl p-2 md:p-6 md:w-7/12 hover:scale-105 hover:transition-all hover:duration-200">
+              <Card className="rounded-xl p-4 md:p-6 md:w-7/12 hover:scale-105 hover:transition-all hover:duration-200">
                 <CardTitle>See how your day looks like</CardTitle>
                 <CardDescription className="text-md mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,
                   mattis ac neque.
                 </CardDescription>
                 <CardContent className="rounded-xl bg-gray-100 p-2  mt-5 flex justify-center items-center">
-                  <img src="/cardImage-1.png" alt="icon" className="w-96 my-4" />
+                  <img src="/cardImage-1.svg" alt="icon" className="w-96 my-4" />
                 </CardContent>
               </Card>
             </div>
             {/* Second Row */}
             <div className="flex flex-col md:flex-row justify-center items-start gap-2">
-              <Card className="rounded-xl p-2 md:p-6 md:w-7/12 hover:scale-105 hover:transition-all hover:duration-200">
+              <Card className="rounded-xl p-4 md:p-6 md:w-7/12 hover:scale-105 hover:transition-all hover:duration-200">
                 <CardTitle>Team up and get things done</CardTitle>
                 <CardDescription className="text-md mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,
                   mattis ac neque.
                 </CardDescription>
                 <CardContent className="rounded-xl bg-gray-100 p-2 mt-5 flex justify-center items-center">
-                  <img src="/cardImage-1.png" alt="icon" className="w-96 my-4" />
+                  <img src="/cardImage-1.svg" alt="icon" className="w-96 my-4" />
                 </CardContent>
               </Card>
-              <Card className="rounded-xl p-2 md:p-6 hover:scale-105 hover:transition-all hover:duration-400">
+              <Card className="rounded-xl p-4 md:p-6 hover:scale-105 hover:transition-all hover:duration-400">
                 <CardTitle>One event calendar for all your needs</CardTitle>
                 <CardDescription className="text-md mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec,
                   mattis ac neque.
                 </CardDescription>
                 <CardContent className="rounded-xl bg-gray-100 p-2 mt-5 flex justify-center items-center">
-                  <img src="/cardImage-1.png" alt="icon" className="w-96 my-4" />
+                  <img src="/cardImage-1.svg" alt="icon" className="w-96 my-4" />
                 </CardContent>
               </Card>
             </div>
