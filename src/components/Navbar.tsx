@@ -38,7 +38,7 @@ export const Navbar = () => {
         <Menu className="md:hidden" />
         <div className="hidden md:block">
           <span className="flex justify-center items-center gap-2">
-            <Button variant="outline" className="border-none rounded-full px-8">
+            <Button variant="outline" className="border-none text-base rounded-full px-8">
               Login
             </Button>
           </span>

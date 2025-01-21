@@ -1,70 +1,18 @@
 import { Check, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-
+import { pricingTiers } from '../config/pricingData'
+interface IPricingData {
+  title: string;
+  monthlyPrice: number;
+  buttonText: string;
+  description: string;
+  popular: boolean;
+  inverse: boolean;
+  features: string[];
+  notIncluded: string[];
+}
 export const Pricing = () => {
-  const pricingTiers = [
-    {
-      title: "Free",
-      monthlyPrice: 0,
-      buttonText: "Get started for free",
-      description: "For small teams",
-      popular: false,
-      inverse: false,
-      features: [
-        "Up to 5 project members",
-        "Unlimited tasks and projects",
-        "2GB storage",
-        "Integrations",
-        "Basic support",
-      ],
-      notIncluded: ["expert support", "Dedicated account manager", "Custom fields", "Advanced analytics", "API access"],
-    },
-    {
-      title: "Pro",
-      monthlyPrice: 9,
-      buttonText: "Sign up now",
-      description: "For growing teams",
-      popular: true,
-      inverse: true,
-      features: [
-        "Up to 50 project members",
-        "Unlimited tasks and projects",
-        "50GB storage",
-        "Integrations",
-        "Expert support",
-        "Custom fields",
-        "Advanced analytics",
-      ],
-      notIncluded: [
-        "Dedicated account manager",
-        "API access",
-        "Advanced security features",
-      ],
-    },
-    {
-      title: "Business",
-      monthlyPrice: 19,
-      buttonText: "Sign up now",
-      description: "For large teams",
-      popular: false,
-      inverse: false,
-      features: [
-        "Up to 5 project members",
-        "Unlimited tasks and projects",
-        "200GB storage",
-        "Integrations",
-        "Dedicated account manager",
-        "Custom fields",
-        "Advanced analytics",
-        "Export capabilities",
-        "API access",
-        "Advanced security features",
-      ],
-      notIncluded: [],
-
-    },
-  ];
   return (
     <div>
       <div className="min-h-screen mx-4 mt-6 pb-10 bg-gradient-to-b from-white to-green-50">
@@ -73,7 +21,7 @@ export const Pricing = () => {
           Free forever. Upgrade for unlimited events, better security, and exclusive features.
         </p>
         <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-start lg:justify-center">
-          {pricingTiers.map((item, index) => (
+          {pricingTiers.map((item:IPricingData, index:number) => (
             <Card
               key={index}
               className={`p-4 md:p-6 shadow-lg rounded-lg gap-8 text-white w-72 lg:w-96 hover:scale-105 hover:transition-all hover:duration-200 ${

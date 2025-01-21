@@ -1,32 +1,7 @@
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardDescription, CardTitle } from "./ui/card";
+import { cardData } from "../config/cardData";
 export const CardFeatureSection = () => {
-  const cardData = [
-    {
-      title: "Remainders that actually work",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec, mattis ac neque.",
-      imageUrl: "/cardImage-1.svg",
-    },
-    {
-      title: "See how your day looks like",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec, mattis ac neque.",
-      imageUrl: "/cardImage-1.svg",
-    },
-    {
-      title: "Team up and get things done",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec, mattis ac neque.",
-      imageUrl: "/cardImage-1.svg",
-    },
-    {
-      title: "One event calendar for all your needs",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu phare tra nec, mattis ac neque.",
-      imageUrl: "/cardImage-1.svg",
-    },
-  ];
   return (
     <>
       <div className="mt-24 bg-gradient-to-r from-white to-green-50 mx-4 pb-4 rounded-b-xl">
@@ -52,7 +27,7 @@ export const CardFeatureSection = () => {
               >
                 <CardTitle>{card.title}</CardTitle>
                 <CardDescription className="text-md mt-2">{card.description}</CardDescription>
-                <CardContent className="rounded-xl bg-gray-100 p-2 mt-5 flex justify-center items-center">
+                <CardContent className="rounded-xl bg-green-50 mt-5 flex justify-center items-center">
                   <img src={card.imageUrl} alt="icon" className="w-96 my-4" />
                 </CardContent>
               </Card>
