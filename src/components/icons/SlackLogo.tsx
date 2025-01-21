@@ -1,6 +1,10 @@
-export const Slack = () => {
+interface ISlackLogoProps {
+  height?: number;
+  width?: number;
+}
+export const Slack = ({ height = 80, width = 80 }: ISlackLogoProps) => {
   return (
-    <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width={width} height={height} viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="400" height="400" rx="100" fill="white" />
       <path
         d="M121.726 235.619C121.726 251.23 108.974 263.982 93.3632 263.982C77.7524 263.982 65 251.23 65 235.619C65 220.008 77.7524 207.256 93.3632 207.256H121.726V235.619Z"

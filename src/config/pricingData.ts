@@ -30,6 +30,12 @@ export const pricingTiers = [
       "Expert support",
       "Custom fields",
       "Advanced analytics",
+      "Advanced analytics",
+      "Advanced analytics",
+      "Advanced analytics",
+      "Advanced analytics",
+      "Advanced analytics",
+
     ],
     notIncluded: ["Dedicated account manager", "API access", "Advanced security features"],
   },
@@ -54,4 +60,5 @@ export const pricingTiers = [
     ],
     notIncluded: [],
   },
+  
 ];

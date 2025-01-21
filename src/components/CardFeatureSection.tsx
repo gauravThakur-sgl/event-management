@@ -4,7 +4,7 @@ import { cardData } from "../config/cardData";
 export const CardFeatureSection = () => {
   return (
     <>
-      <div className="mt-24 bg-gradient-to-r from-white to-green-50 mx-4 pb-4 rounded-b-xl">
+      <div className="mt-6 bg-gradient-to-r from-white to-green-50 mx-4 pb-4 rounded-b-xl">
         <div className="flex flex-col justify-center items-center pt-5">
           <Badge color="green" className="bg-green-50 hover:bg-green-50 shadow-sm">
             <div className="flex justify-center items-center gap-3 text-green-600 text-base px-2 py-1">
@@ -19,7 +19,7 @@ export const CardFeatureSection = () => {
             </p>
           </div>
           {/* Card Section */}
-          <div className="grid grid-cols-2 justify-center items gap-2 mt-10 px-2 lg:px-52">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-center items gap-2 mt-10 px-2 lg:px-52">
             {cardData.map((card, index) => (
               <Card
                 key={index}

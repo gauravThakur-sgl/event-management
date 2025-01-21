@@ -1,6 +1,10 @@
-export const RelumeLogo = () => {
+interface IRelumeLogoProps {
+  height?: number;
+  width?: number;
+}
+export const RelumeLogo = ({height=100, width=100 }: IRelumeLogoProps) => {
   return (
-    <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width={width} height={height} viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="400" height="400" rx="100" fill="white" />
       <path
         d="M125.088 175.145C111.718 175.145 109.138 186.565 109.138 199.925C109.138 213.285 111.718 223.526 125.088 223.526C138.457 223.526 159.661 248.57 161.712 199.335C163.785 149.577 138.457 175.145 125.088 175.145Z"
