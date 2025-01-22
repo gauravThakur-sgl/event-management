@@ -1,7 +1,7 @@
 import { Check, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import { pricingTiers } from '../config/pricingData'
+import { pricingTiers } from "../config/pricingData";
 interface IPricingData {
   title: string;
   monthlyPrice: number;
@@ -21,7 +21,7 @@ export const Pricing = () => {
           Free forever. Upgrade for unlimited events, better security, and exclusive features.
         </p>
         <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-start lg:justify-center scroll-auto">
-          {pricingTiers.map((item:IPricingData, index:number) => (
+          {pricingTiers.map((item: IPricingData, index: number) => (
             <Card
               key={index}
               className={`p-4 md:p-6 shadow-lg rounded-lg gap-8 text-white w-72 lg:w-96 hover:scale-105 hover:transition-all hover:duration-200 ${
@@ -41,30 +41,32 @@ export const Pricing = () => {
                 <span className={`${item.title === "Pro" ? "text-gray-200" : ""}`}>/month</span>
               </p>
               <p className="mt-6 ">{item.description}</p>
-              <ul className={`mt-6 ${item.title === "Pro" ? "text-white" : "text-gray-500"} space-y-4`}>
-                {item.features.map((feature, index) => (
-                  <li key={index}>
-                    <div className="flex justify-start  gap-4">
-                      <span className={`${item.title === "Pro" ? "" : "text-green-500"}`}>
-                        <Check className={`h-5`} />
-                      </span>
-                      <p>{feature}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-              <ul className={`mt-6 ${item.title === "Pro" ? "text-white" : "text-gray-500"} space-y-4`}>
-                {item.notIncluded.map((feature, index) => (
-                  <li key={index}>
-                    <div className="flex justify-start  gap-4">
-                      <span className={`${item.title === "Pro" ? "" : "text-green-500"}`}>
-                        <X className={`h-5 text-red-500`} />
-                      </span>
-                      <p>{feature}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              <div className="scroll-height overflow-auto">
+                <ul className={`mt-6 ${item.title === "Pro" ? "text-white" : "text-gray-500"} space-y-4`}>
+                  {item.features.map((feature, index) => (
+                    <li key={index}>
+                      <div className="flex justify-start  gap-4">
+                        <span className={`${item.title === "Pro" ? "" : "text-green-500"}`}>
+                          <Check className={`h-5`} />
+                        </span>
+                        <p>{feature}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <ul className={`mt-6 ${item.title === "Pro" ? "text-white" : "text-gray-500"} space-y-4`}>
+                  {item.notIncluded.map((feature, index) => (
+                    <li key={index}>
+                      <div className="flex justify-start  gap-4">
+                        <span className={`${item.title === "Pro" ? "" : "text-green-500"}`}>
+                          <X className={`h-5 text-red-500`} />
+                        </span>
+                        <p>{feature}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <span className="flex justify-center items-center">
                 <Button
                   className={` mt-6 ${

@@ -2,6 +2,24 @@ import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const Navbar = () => {
+  const navBarData = [
+    {
+      title: "Features",
+      link: "/features",
+    },
+    {
+      title: "Pricing",
+      link: "/pricing",
+    },
+    {
+      title: "Support",
+      link: "#support",
+    },
+    {
+      title: "About us",
+      link: "/about",
+    },
+  ];
   return (
     <div className="flex justify-between items-center bg-white p-4 md:px-6 lg:20 xl:px-56 sticky top-0 z-10">
       <div className="flex justify-center items-center font-bold text-green-600 gap-2">
@@ -12,31 +30,13 @@ export const Navbar = () => {
       </div>
       <div className="hidden lg:block">
         <ul className="flex justify-center items-center gap-4 text-lg text-slate-600">
-          <li>
-            <a href="#features" className="hover:text-green-500">
-              Features
-            </a>
-          </li>
-          <li>
-            <a href="#pricing" className="hover:text-green-500">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a href="#support" className="hover:text-green-500">
-              Support
-            </a>
-          </li>
-          <li>
-            <a href="#download" className="hover:text-green-500">
-              Download
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-green-500">
-              About us
-            </a>
-          </li>
+          {navBarData.map((item, index) => (
+            <li key={index}>
+              <a href={item.link} className="hover:text-green-500">
+                {item.title}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="flex justify-center items-center gap-2 px-2">

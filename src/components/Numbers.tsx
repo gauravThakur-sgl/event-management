@@ -4,7 +4,7 @@ import { NumberIcon } from "./ui/NumberIcon";
 export const Numbers = () => {
   const iconStyle = "rounded-full bg-green-500 text-white font semibold h-10 w-10 p-2";
   return (
-    <div className="mx-4 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-24 py-12 rounded-md">
+    <div className="mx-4 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-24 py-20 rounded-md">
       <NumberIcon
         icon={<CalendarCheck2 className={`${iconStyle}`} />}
         description="Total Events Created"

@@ -59,6 +59,9 @@
 }
 
 @layer components {
+  .scroll-height {
+    @apply h-[440px];
+  }
   .logo-fade {
     @apply [mask-image:linear-gradient(to_right,transparent,black,transparent)];
   }
