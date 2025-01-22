@@ -6,6 +6,7 @@ import { CardFeatureSection } from "../components/CardFeatureSection";
 import { Pricing } from "../components/Pricing";
 import { Navbar } from "../components/Navbar";
 import { Numbers } from "../components/Numbers";
+import Information from "../components/Information";
 
 export const LandingPage = () => {
   return (
@@ -17,6 +18,7 @@ export const LandingPage = () => {
       <CardFeatureSection />
       <Integrations />
       <Pricing />
+      <Information />
       <Footer />
     </>
   );

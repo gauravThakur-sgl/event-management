@@ -8,10 +8,6 @@ export const FooterData = [
       links: ["About us", "Careers", "Blog", "Press", "Contact"],
     },
     {
-      title: "Resources",
-      links: ["Help Center", "Tutorials", "Community", "API Documentation", "FAQs"],
-    },
-    {
       title: "Legal",
       links: ["Privacy Policy", "Terms of Service", "Cookie Policy", "Security", "GDPR Compliance"],
     },

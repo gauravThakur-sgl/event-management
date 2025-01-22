@@ -20,7 +20,7 @@ export const Pricing = () => {
         <p className="text-gray-500 text-lg mt-6 text-center">
           Free forever. Upgrade for unlimited events, better security, and exclusive features.
         </p>
-        <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-start lg:justify-center scroll-auto">
+        <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-start lg:justify-center scroll-auto break-points">
           {pricingTiers.map((item: IPricingData, index: number) => (
             <Card
               key={index}

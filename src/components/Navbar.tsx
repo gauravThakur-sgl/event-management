@@ -21,7 +21,7 @@ export const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center bg-white p-4 md:px-6 lg:20 xl:px-56 sticky top-0 z-10">
+    <div className="flex justify-between items-center bg-white p-4 md:px-6 xl:px-32 2xl:px-56 sticky top-0 z-10">
       <div className="flex justify-center items-center font-bold text-green-600 gap-2">
         <span>
           <img src="/logo.png" alt="Event Management Logo" height={40} width={40} />

@@ -59,17 +59,26 @@
 }
 
 @layer components {
+  .cbreak-points {
+    @apply px-6 md:px-6 xl:px-32 2xl:px-56 mx-auto;
+  }
   .scroll-height {
     @apply h-[440px];
   }
   .logo-fade {
     @apply [mask-image:linear-gradient(to_right,transparent,black,transparent)];
   }
+  .logo-fade {
+    @apply [mask-image:linear-gradient(to_right,transparent,black,transparent)];
+  }
+  .crousel-fade {
+    @apply [mask-image:linear-gradient(to_right,transparent,bg-green-200,transparent)];
+  }
   .gridLines {
     @apply inset-0 bg-[linear-gradient(to_right,#FFFFFF1A_1px,transparent_1px),linear-gradient(to_bottom,#FFFFFF1A_1px,transparent_1px)] bg-[size:24px_24px];
   }
   .section-title {
-    @apply font-semibold text-3xl lg:text-5xl tracking-tight text-center px-2 xl:px-64;
+    @apply font-medium text-3xl lg:text-5xl tracking-tight text-center px-2 xl:px-64;
   }
   .section-description {
     @apply text-gray-500 text-lg mt-6 text-center;

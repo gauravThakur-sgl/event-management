@@ -1,6 +1,6 @@
 import { Badge } from "./ui/badge";
-import { Card, CardContent, CardDescription, CardTitle } from "./ui/card";
 import { cardData } from "../config/cardData";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 export const CardFeatureSection = () => {
   return (
     <>
@@ -19,19 +19,27 @@ export const CardFeatureSection = () => {
             </p>
           </div>
           {/* Card Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 justify-center items gap-2 mt-10 px-2 lg:px-52">
-            {cardData.map((card, index) => (
-              <Card
-                key={index}
-                className="rounded-xl p-4 md:p-6 hover:scale-105 hover:transition-all hover:duration-200"
-              >
-                <CardTitle>{card.title}</CardTitle>
-                <CardDescription className="text-md mt-2">{card.description}</CardDescription>
-                <CardContent className="rounded-xl bg-green-50 mt-5 flex justify-center items-center">
-                  <img src={card.imageUrl} alt="icon" className="w-96 my-4" />
-                </CardContent>
-              </Card>
-            ))}
+          <div className="snap-x snap-mandatory mt-10 px-2 lg:mx-52">
+            <Carousel>
+              <CarouselContent className="crousel-fade gap-4 py-10">
+                {cardData.map((card, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="md:basis-1/3 border bg-green-50 shadow-lg rounded-lg p-4 snap-x overflow-hidden mx-2 transition-all duration-200"
+                  >
+                    <div className="text-md text-green-600 text-pretty font-semibold">{card.description}</div>
+                    {card.features.map((feature, index) => (
+                      <div key={index} className="flex justify-center items-center gap-4 mt-4">
+                        <p className="text-sm font-semibold text-black">{feature.title}:</p>
+                        <p className="text-sm">{feature.description}</p>
+                      </div>
+                    ))}
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </div>
