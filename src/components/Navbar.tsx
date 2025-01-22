@@ -21,18 +21,18 @@ export const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center bg-white p-4 md:px-6 xl:px-32 2xl:px-56 sticky top-0 z-10">
-      <div className="flex justify-center items-center font-bold text-green-600 gap-2">
+    <div className="flex justify-between items-center bg-green-600 p-4 md:px-6 xl:px-32 2xl:px-56 sticky top-0 z-10">
+      <div className="flex justify-center items-center font-bold text-white gap-2">
         <span>
           <img src="/logo.png" alt="Event Management Logo" height={40} width={40} />
         </span>
         Event Management
       </div>
       <div className="hidden lg:block">
-        <ul className="flex justify-center items-center gap-4 text-lg text-slate-600">
+        <ul className="flex justify-center items-center gap-4 text-lg text-white">
           {navBarData.map((item, index) => (
             <li key={index}>
-              <a href={item.link} className="hover:text-green-500">
+              <a href={item.link}>
                 {item.title}
               </a>
             </li>
