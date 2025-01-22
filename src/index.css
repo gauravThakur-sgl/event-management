@@ -59,7 +59,7 @@
 }
 
 @layer components {
-  .cbreak-points {
+  .break-points {
     @apply px-6 md:px-6 xl:px-32 2xl:px-56 mx-auto;
   }
   .scroll-height {

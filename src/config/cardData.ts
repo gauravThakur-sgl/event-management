@@ -73,6 +73,7 @@ export const cardData = [
         description: "Share events with family, friends, or team members to keep everyone informed.",
       },
     ],
+    img: '/calendar.png',
   },
   {
     description:
@@ -103,6 +104,7 @@ export const cardData = [
         description: "Enjoy a seamless experience with an intuitive and minimalistic interface.",
       },
     ],
+    img: '/todo.png',
   },
   {
     description:
@@ -139,5 +141,6 @@ export const cardData = [
       },
       { title: "Mobile-Friendly", description: "Create and publish blogs on the go with mobile responsiveness." },
     ],
+    img:'/blogging.png'
   },
 ];
