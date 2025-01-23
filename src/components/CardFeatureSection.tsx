@@ -1,7 +1,7 @@
 import { Badge } from "./ui/badge";
 // import { cardData } from "../config/cardData";
 // import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
-import { Features } from "./Features";
+// import { Features } from "./Features";
 export const CardFeatureSection = () => {
   return (
     <>
@@ -12,7 +12,7 @@ export const CardFeatureSection = () => {
               <p>Our Cool Tools</p>
             </div>
           </Badge>
-          <Features />
+          
         </div>
       </div>
     </>

@@ -38,6 +38,7 @@ export const cardData = [
 
   {
     description: "Effortlessly organize your schedule with our event calendar feature.",
+    background: "bg-gradient-to-r from-white to-blue-100",
     features: [
       {
         title: "Easy Event Creation",
@@ -81,9 +82,12 @@ export const cardData = [
       },
     ],
     img: "/calendar.png",
+    imgAlt: "Event Calendar",
+    imgEffects: "",
   },
   {
     description: "Stay productive and organized with our to-do list feature.",
+    background: "bg-gradient-to-l from-white to-green-100",
     features: [
       {
         title: "Quick Task Addition",
@@ -132,9 +136,12 @@ export const cardData = [
       },
     ],
     img: "/todo.png",
+    imgAlt: "To-Do List",
+    imgEffects: "",
   },
   {
     description: "Express your ideas and share valuable insights with our blogging feature.",
+    background: "bg-gradient-to-r from-purple-50 to-purple-200",
     features: [
       {
         title: "Effortless Writing",
@@ -180,5 +187,7 @@ export const cardData = [
       },
     ],
     img: "/blogging.png",
+    imgAlt: "Blogging",
+    imgEffects: "",
   },
 ];

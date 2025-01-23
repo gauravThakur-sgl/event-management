@@ -9,7 +9,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
+      sans: ["sans-serif", "system-ui"],
       roboto: ["Roboto", "sans-serif"],
+      "funnel-sans": ["Funnel Sans", "sans-serif"]
     },
     extend: {
       colors: {

@@ -2,11 +2,12 @@ import { Hero } from "../components/Hero";
 import { Integrations } from "../components/Integrations";
 import { Footer } from "../components/Footer";
 import { Feature } from "../components/Feature";
-import { CardFeatureSection } from "../components/CardFeatureSection";
+// import { CardFeatureSection } from "../components/CardFeatureSection";
 import { Pricing } from "../components/Pricing";
 import { Navbar } from "../components/Navbar";
 import { Numbers } from "../components/Numbers";
 import Information from "../components/Information";
+import { Features } from "../components/Features";
 
 export const LandingPage = () => {
   return (
@@ -15,7 +16,8 @@ export const LandingPage = () => {
       <Hero />
       <Numbers />
       <Feature />
-      <CardFeatureSection />
+      <Features />
+      {/* <CardFeatureSection /> */}
       <Integrations />
       <Pricing />
       <Information />
