@@ -1,7 +1,7 @@
 interface INumberIconProps {
   icon: React.ReactNode;
   description: string;
-  number: string;
+  number?: React.ReactNode;
 }
 export const NumberIcon = ({ icon, description, number }: INumberIconProps) => {
   return (
