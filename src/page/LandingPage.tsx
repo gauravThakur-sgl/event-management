@@ -10,6 +10,7 @@ import Information from "../components/Information";
 import { Features } from "../components/Features";
 import { TodoEvent } from "../components/TodoEvent";
 import { NewPricing } from "../components/NewPricing";
+import { Faq } from "../components/Faq";
 
 export const LandingPage = () => {
   return (
@@ -24,6 +25,7 @@ export const LandingPage = () => {
       <Integrations />
       {/* <Pricing /> */}
       <NewPricing />
+      <Faq />
       <Information />
       <Footer />
     </>
