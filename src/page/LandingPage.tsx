@@ -8,6 +8,7 @@ import { Navbar } from "../components/Navbar";
 import { Numbers } from "../components/Numbers";
 import Information from "../components/Information";
 import { Features } from "../components/Features";
+import { TodoEvent } from "../components/TodoEvent";
 
 export const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ export const LandingPage = () => {
       <Feature />
       <Features />
       {/* <CardFeatureSection /> */}
+      <TodoEvent />
       <Integrations />
       <Pricing />
       <Information />

@@ -17,8 +17,8 @@ export const Features = () => {
               {card.features.slice(0, 4).map((feature, index) => (
                 <div key={index} className={`${cardStyle}`}>
                   <div className={`${featureTitle} flex item-center gap-2`}>
-                    <span className="h-6 w-6">
-                      <img src={feature.icon} alt="" className="text-green-500" />
+                    <span className={`h-6 w-6`}>
+                      <img src={feature.icon} alt="" className="text-green-600"/>
                     </span>
                     {feature.title}
                   </div>
@@ -31,7 +31,7 @@ export const Features = () => {
                 <img
                   src={card.img}
                   alt={card.imgAlt}
-                  className={`absolute inset-0 w-full h-full object-cover rounded-md md:rounded-full shadow-xl border-4 border-white hover:scale-105 transition-transform duration-300 ease-in-out ${card.imgEffects}`}
+                  className={`absolute inset-0 w-full h-full object-cover rounded-md md:rounded-full shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out`}
                 />
               </div>
             </div>
@@ -39,8 +39,8 @@ export const Features = () => {
               {card.features.slice(4, 8).map((feature, index) => (
                 <div key={index} className={`${cardStyle}`}>
                   <div className={`${featureTitle} flex item-center gap-2`}>
-                    <span className="h-6 w-6">
-                      <img src={feature.icon} alt="" />
+                    <span className={`h-6 w-6 ${card.iconColor}`}>
+                      <img src={feature.icon} alt="" className={`${card.iconColor}`} />
                     </span>
                     {feature.title}
                   </div>

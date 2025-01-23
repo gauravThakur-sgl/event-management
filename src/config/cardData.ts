@@ -39,6 +39,7 @@ export const cardData = [
   {
     description: "Effortlessly organize your schedule with our event calendar feature.",
     background: "bg-gradient-to-r from-white to-blue-100",
+    iconColor: "text-blue-500",
     features: [
       {
         title: "Easy Event Creation",
@@ -83,65 +84,11 @@ export const cardData = [
     ],
     img: "/calendar.png",
     imgAlt: "Event Calendar",
-    imgEffects: "",
-  },
-  {
-    description: "Stay productive and organized with our to-do list feature.",
-    background: "bg-gradient-to-l from-white to-green-100",
-    features: [
-      {
-        title: "Quick Task Addition",
-        description: "Easily add tasks with details such as due dates, priorities, and descriptions.",
-        icon: "eventIcon.svg",
-      },
-      {
-        title: "Prioritization",
-        description: "Categorize tasks by priority levels to focus on what matters most.",
-        icon: "/taskIcon.svg",
-      },
-      {
-        title: "Progress Tracking",
-        description: "Monitor task progress with checklists and completion percentages.",
-        icon: "/progressIcon.svg",
-      },
-      {
-        title: "Reminders & Alerts",
-        description: "Set reminders to keep yourself on track and ensure deadlines are met.",
-        icon: "/alerts.svg ",
-      },
-      {
-        title: "Recurring Tasks",
-        description: "Automate repetitive tasks such as daily workouts or weekly reviews.",
-        icon: "/daily.svg",
-      },
-      {
-        title: "Drag-and-Drop Organization",
-        description: "Rearrange tasks effortlessly to fit your workflow.",
-        icon: "/organisation.svg",
-      },
-      {
-        title: "Sync with Calendar",
-        description: "Integrate your to-do list with the calendar to align your tasks with upcoming events.",
-        icon: "/calendarIcon.svg",
-      },
-      {
-        title: "Share with Others",
-        description: "Collaborate with teammates, family, or friends to manage joint tasks.",
-        icon: "/shareIcon.svg",
-      },
-      {
-        title: "User-Friendly Design",
-        description: "Enjoy a seamless experience with an intuitive and minimalistic interface.",
-        icon: "/userIcon.svg",
-      },
-    ],
-    img: "/todo.png",
-    imgAlt: "To-Do List",
-    imgEffects: "",
   },
   {
     description: "Express your ideas and share valuable insights with our blogging feature.",
     background: "bg-gradient-to-r from-purple-50 to-purple-200",
+    iconColor: "text-purple-500",
     features: [
       {
         title: "Effortless Writing",
@@ -188,6 +135,5 @@ export const cardData = [
     ],
     img: "/blogging.png",
     imgAlt: "Blogging",
-    imgEffects: "",
   },
 ];
