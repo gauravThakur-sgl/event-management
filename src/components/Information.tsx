@@ -4,7 +4,7 @@ import { footerIcons } from "../config/footerIcons";
 const Information = () => {
   const listStyle = "flex flex-col items-start text-gray-600";
   return (
-    <div className="bg-transparent backdrop-blur-2xl pt-10 pb-10 px-6 md:px-6 xl:px-32 2xl:px-56">
+    <div className="bg-slate-50 pt-10 pb-10 px-6 md:px-6 xl:px-32 2xl:px-56">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="font-semibold text-3xl text-center md:text-left">Event Management</div>
         {/* Social Media Icons */}
