@@ -63,7 +63,7 @@
     @apply px-6 md:px-6 xl:px-32 2xl:px-56 mx-auto;
   }
   .scroll-height {
-    @apply h-[440px];
+    @apply h-[600px];
   }
   .logo-fade {
     @apply [mask-image:linear-gradient(to_right,transparent,black,transparent)];

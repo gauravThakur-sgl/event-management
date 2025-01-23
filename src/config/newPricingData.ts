@@ -37,3 +37,62 @@ export const netflixPricingIndia = [
     downloadDevices: 6,
   },
 ];
+
+export const eventManagementPricing = [
+  {
+    planName: "Basic",
+    price: 299, // Price in INR
+    features: [
+      "Access to basic event management tools",
+      "Up to 50 attendees per event",
+      "Email support",
+      "Basic analytics",
+    ],
+    supportedDevices: ["Web", "Mobile"],
+    simultaneousEvents: 1,
+    downloadReports: false,
+  },
+  {
+    planName: "Popular",
+    price: 599, // Price in INR
+    features: [
+      "Access to all event management tools",
+      "Up to 200 attendees per event",
+      "Priority email support",
+      "Advanced analytics",
+      
+    ],
+    supportedDevices: ["Web", "Mobile"],
+    simultaneousEvents: 3,
+    downloadReports: true,
+  },
+  {
+    planName: "Premium",
+    price: 999, // Price in INR
+    features: [
+      "Access to all event management tools",
+      "Unlimited attendees per event",
+      "24/7 phone and email support",
+      "Advanced analytics and reporting",
+      "Custom branding",
+    ],
+    supportedDevices: ["Web", "Mobile"],
+    simultaneousEvents: 10,
+    downloadReports: true,
+  },
+  {
+    planName: "Enterprise",
+    price: 1999, // Price in INR
+    features: [
+      "All Premium features",
+      "Unlimited events and attendees",
+      "Custom integrations",
+      "On-site support",
+      "Custom analytics and reporting",
+      "Dedicated account manager",
+    ],
+    supportedDevices: ["Web", "Mobile"],
+    simultaneousEvents: "Unlimited",
+    downloadReports: true,
+  },
+];
