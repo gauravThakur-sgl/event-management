@@ -2,8 +2,8 @@ import { Button } from "./ui/button";
 
 export const Hero = () => {
   return (
-    <div className="md:h-screen overflow-hidden bg-gradient-to-b from-gray-100 to-green-100 mx-4 rounded-b-3xl">
-      <div className="mt-24 flex flex-col justify-center items-center mx-4">
+    <div className="md:h-screen overflow-hidden bg-gradient-to-b from-gray-100 to-green-100 mx-4 rounded-b-3xl py-20">
+      <div className="flex flex-col justify-center items-center mx-4">
         <h1 className="section-title">
         <span className="font-light">Simplify </span> Your WorkFlow <br /> Maximize
             

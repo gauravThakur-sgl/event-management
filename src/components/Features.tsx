@@ -7,18 +7,18 @@ export const Features = () => {
   return (
     <div className="">
       {cardData.map((card, index) => (
-        <div
-          key={index}
-          className={`${card.background} pb-10 last:mb-0 m-2 break-points mx-4 pt-5 rounded-b-2xl font-funnel-sans`}
-        >
-          <h2 className="text-2xl font-semibold text-gray-800 text-center mb-6">{card.description}</h2>
-          <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
-            <div className="space-y-6">
+        <div key={index} className={`pb-10 last:mb-0 m-2  mx-4 pt-5 rounded-b-2xl font-funnel-sans`}>
+          <h2 className={`section-title text-gray-800 text-center my-10 pt-20`}>
+            Express your ideas with our{" "}
+            <span className="text-white text-medium bg-green-500 rounded-lg px-2">blogging</span> feature 
+          </h2>
+          <div className={`${card.background} break-points relative grid grid-cols-1 lg:grid-cols-3 gap-2 py-10 mt-20`}>
+            <div className="space-y-6 z-10">
               {card.features.slice(0, 4).map((feature, index) => (
                 <div key={index} className={`${cardStyle}`}>
                   <div className={`${featureTitle} flex item-center gap-2`}>
                     <span className={`h-6 w-6`}>
-                      <img src={feature.icon} alt="" className="text-green-600"/>
+                      <img src={feature.icon} alt="" className="text-green-600" />
                     </span>
                     {feature.title}
                   </div>
@@ -27,11 +27,11 @@ export const Features = () => {
               ))}
             </div>
             <div className="flex items-center justify-center">
-              <div className="relative h-80 lg:h-96 aspect-square hidden lg:block">
+              <div className="absolute event-image aspect-square opacity-40 lg:opacity-70">
                 <img
                   src={card.img}
                   alt={card.imgAlt}
-                  className={`absolute inset-0 w-full h-full object-cover rounded-md md:rounded-full shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out`}
+                  className={`inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out`}
                 />
               </div>
             </div>

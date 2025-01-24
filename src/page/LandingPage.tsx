@@ -11,23 +11,48 @@ import { Features } from "../components/Features";
 import { TodoEvent } from "../components/TodoEvent";
 import { NewPricing } from "../components/NewPricing";
 import { Faq } from "../components/Faq";
+import { EventCalendar } from "../components/EventCalendar";
 
 export const LandingPage = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Numbers />
-      <Feature />
-      <Features />
-      {/* <CardFeatureSection /> */}
-      <TodoEvent />
-      <Integrations />
-      {/* <Pricing /> */}
-      <NewPricing />
-      <Faq />
-      <Information />
-      <Footer />
+
+      <div className="pt-16">
+        <div id="hero">
+          <Hero />
+        </div>
+        <div id="numbers">
+          <Numbers />
+        </div>
+        <div id="feature">
+          <Feature />
+        </div>
+        <div id="features">
+          <Features />
+        </div>
+        <div id="event-calendar">
+          <EventCalendar />
+        </div>
+        {/* <CardFeatureSection /> */}
+        <div id="todo-event">
+          <TodoEvent />
+        </div>
+        <div id="integrations">
+          <Integrations />
+        </div>
+        {/* <Pricing /> */}
+        <div id="pricing">
+          <NewPricing />
+        </div>
+        <div id="faq">
+          <Faq />
+        </div>
+        <div id="information">
+          <Information />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };

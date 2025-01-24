@@ -12,7 +12,6 @@ export const CardFeatureSection = () => {
               <p>Our Cool Tools</p>
             </div>
           </Badge>
-          
         </div>
       </div>
     </>

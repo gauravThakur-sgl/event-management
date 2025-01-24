@@ -1,7 +1,7 @@
 import { todoEventData } from "../config/todoEvent";
 export const TodoEvent = () => {
   return (
-    <div className="break-points py-10 font-funnel-sans bg-transparent">
+    <div className="break-points py-20 font-funnel-sans bg-transparent">
       <h2 className="section-title">Stay <span className="bg-green-500 px-2 rounded-lg text-white text-medium font-normal">productive</span> and organized with our <span className="font-semibold">to-do list</span> feature.</h2>
       <div>
         {todoEventData.map((todoEvent, index) => (

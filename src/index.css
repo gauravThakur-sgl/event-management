@@ -83,4 +83,7 @@
   .section-description {
     @apply text-gray-500 text-lg mt-6 text-center;
   }
+  .event-image {
+    @apply w-[320px] h-[320px] md:w-[425px] md:h-[425px] lg:w-[500px] lg:h-[500px] object-cover rounded-lg;
+  }
 }
