@@ -17,7 +17,7 @@ export const NewPricingDexktop = ({ eventManagementPricing, active, handleActive
         <div key={index}>
           {item.planName === "Popular" && (
             <div
-              className={`text-center p-1 min-w-72 max-w-80 border rounded-t-xl text-sm ${
+              className={`text-center p-1 min-w-60 max-w-72 border rounded-t-xl text-sm ${
                 active === index
                   ? "bg-purple-500 text-white transition-all duration-300"
                   : "bg-gray-500 text-white transition-all duration-300"
@@ -28,7 +28,7 @@ export const NewPricingDexktop = ({ eventManagementPricing, active, handleActive
           )}
           <div
             onClick={() => handleActive(index)}
-            className={`min-w-72 max-w-80 border ${
+            className={`min-w-60 max-w-72 border ${
               active === index ? "shadow-xl transition-all duration-200" : "transition-all duration-200"
             } ${item.planName === "Popular" ? "rounded-b-2xl" : "rounded-2xl"} max-w-64 p-2 scroll-height`}
           >

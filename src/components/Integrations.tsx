@@ -41,7 +41,7 @@ export const Integrations = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-l from-white to-green-100 mx-4 rounded-b-xl">
+      <div className="bg-gradient-to-l from-white to-green-100 mx-4 rounded-b-xl mt-24">
         <div className="pt-20 flex flex-col justify-center items-center">
           <h2 className="section-title">
             Sync Events seamlessly <br /> with all the tools you use every day

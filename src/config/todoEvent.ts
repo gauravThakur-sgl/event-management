@@ -1,6 +1,6 @@
 export const todoEventData = [
   {
-    background: "bg-gradient-to-l from-white to-green-100",
+    background: "bg-gradient-to-l from-white to-teal-100",
     iconColor: "text-green-500",
     features: [
       {
@@ -23,26 +23,26 @@ export const todoEventData = [
         description: "Set reminders to keep yourself on track and ensure deadlines are met.",
         icon: "/alerts.svg ",
       },
-      // {
-      //   title: "Recurring Tasks",
-      //   description: "Automate repetitive tasks such as daily workouts or weekly reviews.",
-      //   icon: "/daily.svg",
-      // },
-      // {
-      //   title: "Drag-and-Drop Organization",
-      //   description: "Rearrange tasks effortlessly to fit your workflow.",
-      //   icon: "/organisation.svg",
-      // },
-      // {
-      //   title: "Sync with Calendar",
-      //   description: "Integrate your to-do list with the calendar to align your tasks with upcoming events.",
-      //   icon: "/calendarIcon.svg",
-      // },
-      // {
-      //   title: "Share with Others",
-      //   description: "Collaborate with teammates, family, or friends to manage joint tasks.",
-      //   icon: "/shareIcon.svg",
-      // },
+      {
+        title: "Recurring Tasks",
+        description: "Automate repetitive tasks such as daily workouts or weekly reviews.",
+        icon: "/daily.svg",
+      },
+      {
+        title: "Drag-and-Drop Organization",
+        description: "Rearrange tasks effortlessly to fit your workflow.",
+        icon: "/organisation.svg",
+      },
+      {
+        title: "Sync with Calendar",
+        description: "Integrate your to-do list with the calendar to align your tasks with upcoming events.",
+        icon: "/calendarIcon.svg",
+      },
+      {
+        title: "Share with Others",
+        description: "Collaborate with teammates, family, or friends to manage joint tasks.",
+        icon: "/shareIcon.svg",
+      },
     ],
     img: "/todo.png",
     imgAlt: "To-Do List",
