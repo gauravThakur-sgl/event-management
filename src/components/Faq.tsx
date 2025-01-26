@@ -2,10 +2,10 @@ import { useState } from "react";
 import { faqData } from "../config/faqData";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 export const Faq = () => {
-  const [isOpened, setIsOpened] = useState(false);
-  const handleIsOpened = () => {
-    setIsOpened(!isOpened);
-  }
+  const [isOpened, setIsOpened] = useState<string | undefined>(undefined);
+  const handleIsOpened = (index: string) => {
+    setIsOpened(isOpened === index ? undefined : index);
+  };
   return (
     <div className="break-points py-20">
       <div>
@@ -15,9 +15,14 @@ export const Faq = () => {
       </div>
       <div className="grid grid-cols-1 justify-center items-center pt-10 md:px-20 lg:px-40 xl:px-64">
         {faqData.map((item, index) => (
-          <Accordion type="single" collapsible className="w-full" key={index}>
+          <Accordion type="single" collapsible className="w-full" key={index} value={isOpened} onValueChange={setIsOpened}>
             <AccordionItem value={index.toString()}>
-              <AccordionTrigger className="text-gray-800 text-lg md:text-xl font-semibold hover:no-underline" onClick={() => handleIsOpened}>{item.category}</AccordionTrigger>
+              <AccordionTrigger
+                className="text-gray-800 text-lg md:text-xl font-semibold hover:no-underline"
+                onClick={() => handleIsOpened(index.toString())}
+              >
+                {item.category}
+              </AccordionTrigger>
               {item.questions.map((data, index) => (
                 <AccordionContent key={index}>
                   <h3 className="font-semibold text-base md:text-lg text-black">{data.question}</h3>
