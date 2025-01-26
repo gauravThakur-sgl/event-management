@@ -7,7 +7,7 @@ export const TodoEvent = () => {
     <div>
       <div className="">
         {todoEventData.map((card, index) => (
-          <div key={index} className={`pb-10 last:mb-0 m-2  mx-4 pt-5 rounded-b-2xl font-funnel-sans`}>
+          <div key={index} className={`pb-10 last:mb-0 m-2 mx-4 pt-5 rounded-b-2xl font-funnel-sans`}>
             <h2 className="section-title leading-snug text-gray-800 text-center my-10">
               Stay productive and organized with our{" "}
               <span className="bg-green-500 text-white px-2 rounded-lg text-nowrap">to-do</span> list feature.

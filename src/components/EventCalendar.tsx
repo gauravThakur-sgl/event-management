@@ -7,7 +7,7 @@ export const EventCalendar = () => {
     <div>
       <div className="">
         {calendarEvent.map((card, index) => (
-          <div key={index} className={`pb-10 last:mb-0 m-2  mx-4 pt-5 rounded-b-2xl font-funnel-sans`}>
+          <div key={index} className={`pb-10 last:mb-0 m-2 mx-4 pt-5 rounded-b-2xl font-funnel-sans`}>
             <h2 className="section-title leading-snug pb-10">
               Effortlessly organize your schedule with our event{" "}
               <span className="rounded-lg px-2 bg-green-500 text-white text-nowrap">{""}calendar</span> feature.

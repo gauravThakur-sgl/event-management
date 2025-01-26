@@ -1,5 +1,4 @@
 import { Hero } from "../components/Hero";
-import { Integrations } from "../components/Integrations";
 import { Footer } from "../components/Footer";
 // import { CardFeatureSection } from "../components/CardFeatureSection";
 // import { Pricing } from "../components/Pricing";
@@ -7,10 +6,8 @@ import { Navbar } from "../components/Navbar";
 import { Numbers } from "../components/Numbers";
 import Information from "../components/Information";
 import { Features } from "../components/Features";
-import { TodoEvent } from "../components/TodoEvent";
 import { NewPricing } from "../components/NewPricing";
 import { Faq } from "../components/Faq";
-import { EventCalendar } from "../components/EventCalendar";
 
 export const LandingPage = () => {
   return (
@@ -25,16 +22,6 @@ export const LandingPage = () => {
         </div>
         <div id="features">
           <Features />
-        </div>
-        <div id="event-calendar">
-          <EventCalendar />
-        </div>
-        {/* <CardFeatureSection /> */}
-        <div id="todo-event">
-          <TodoEvent />
-        </div>
-        <div id="integrations">
-          <Integrations />
         </div>
         {/* <Pricing /> */}
         <div id="pricing">
