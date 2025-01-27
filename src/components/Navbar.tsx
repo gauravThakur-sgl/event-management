@@ -1,23 +1,66 @@
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
-import { HashLink as Link } from "react-router-hash-link";
-export const Navbar = () => {
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "./ui/navigation-menu";
+interface INavbarProps {
+  featureRef: React.RefObject<HTMLDivElement>;
+  pricingRef: React.RefObject<HTMLDivElement>;
+  faqRef: React.RefObject<HTMLDivElement>;
+  informationRef: React.RefObject<HTMLDivElement>;
+}
+
+export const Navbar = ({ featureRef, pricingRef, faqRef, informationRef }: INavbarProps) => {
+  const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const navBarData = [
     {
       title: "Features",
       link: "/#features",
+      ref: featureRef,
+      subFeatures: [
+        {
+          title: "Event Details",
+          link: "/#features",
+          ref: featureRef,
+        },
+        {
+          title: "Event Blogging",
+          link: "/#features",
+          ref: featureRef,
+        },
+        {
+          title: "Event Todo",
+          link: "/#features",
+          ref: featureRef,
+        },
+      ],
     },
     {
       title: "Pricing",
       link: "/#pricing",
+      ref: pricingRef,
+      subFeatures: [],
     },
     {
       title: "Support",
       link: "/#faq",
+      ref: faqRef,
+      subFeatures: [],
     },
     {
       title: "About us",
       link: "/#information",
+      ref: informationRef,
+      subFeatures: [],
     },
   ];
   return (
@@ -30,15 +73,41 @@ export const Navbar = () => {
           {/* Event Management */}
         </div>
         <div className="hidden lg:block">
-          <ul className="flex justify-center items-center gap-4 text-lg text-white">
-            {navBarData.map((item, index) => (
-              <li key={index}>
-                <Link to={item.link} smooth className="hover:green-500">
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <NavigationMenu className="flex justify-center items-center gap-4 text-lg text-white bg-green-600">
+            <NavigationMenuList>
+              {navBarData.map((item, index) => (
+                <NavigationMenuItem key={index}>
+                  {item.title === "Features" && (
+                    <div>
+                      <NavigationMenuTrigger className="bg-green-600 hover:bg-green-600 hover:text-white text-lg font-normal">
+                        {item.title}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul>
+                          {item.subFeatures.map((data, index) => (
+                            <li
+                              key={index}
+                              onClick={() => scrollToRef(item.ref)}
+                              className="cursor-pointer text-nowrap p-2 bg-green-600 text-white"
+                            >
+                              <NavigationMenuLink>{data.title}</NavigationMenuLink>
+                            </li>
+                          ))}
+                        </ul>
+                      </NavigationMenuContent>
+                    </div>
+                  )}
+                  {item.title !== "Features" && (
+                    <ul className="">
+                      <li onClick={() => scrollToRef(item.ref)} className="cursor-pointer">
+                        <NavigationMenuLink className="pl-8">{item.title}</NavigationMenuLink>
+                      </li>
+                    </ul>
+                  )}
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
         <div className="flex justify-center items-center gap-2 px-2">
           <Menu className="md:hidden" />
