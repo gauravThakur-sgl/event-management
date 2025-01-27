@@ -12,7 +12,7 @@ export const TodoEvent = () => {
               Stay productive and organized with our{" "}
               <span className="bg-green-500 text-white px-2 rounded-lg text-nowrap">to-do</span> list feature.
             </h2>
-            <div className={`${card.background} break-points relative grid grid-cols-1 lg:grid-cols-3 gap-2 py-10`}>
+            <div className={`${card.background} break-points relative grid grid-cols-1 lg:grid-cols-3 gap-2 py-10 mt-10`}>
               <div className="space-y-6 z-10">
                 {card.features.slice(0, 4).map((feature, index) => (
                   <div key={index} className={`${cardStyle}`}>

@@ -7,9 +7,9 @@ export const Features = () => {
   const featureTitle = "text-base font-semibold lg:font-semibold text-gray-600";
   const cardStyle = "p-3 bg-transparent rounded-xl hover:shadow-md transition-shadow-xl duration-200";
   return (
-    <div className="mx-4 md:mx-16 lg:mx-28">
+    <div className="md:mx-16 lg:mx-28">
       {cardData.map((card, index) => (
-        <div key={index} className={`pb-10 last:mb-0 m-2  mx-4 pt-5 rounded-b-2xl font-funnel-sans`}>
+        <div key={index} className={`pb-20 last:mb-0 m-2  mx-4 pt-5 rounded-b-2xl font-funnel-sans`}>
           <h2 className="leading-snug section-title">
             Express your ideas with our{" "}
             <span className="rounded-lg px-2 bg-green-500 text-white text-nowrap">blogging</span>
