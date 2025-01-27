@@ -12,7 +12,7 @@ export const EventCalendar = () => {
               Effortlessly organize your schedule with our event{" "}
               <span className="rounded-lg px-2 bg-green-500 text-white text-nowrap">{""}calendar</span> feature.
             </h2>
-            <div className={`${card.background} break-points relative grid grid-cols-1 lg:grid-cols-3 gap-2 py-10 mt-10`}>
+            <div className={`${card.background} break-points relative grid grid-cols-1 lg:grid-cols-3 gap-2 py-20`}>
               <div className="space-y-6 z-10">
                 {card.features.slice(0, 4).map((feature, index) => (
                   <div key={index} className={`${cardStyle}`}>
