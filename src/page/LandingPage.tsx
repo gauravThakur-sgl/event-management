@@ -9,6 +9,7 @@ import { Faq } from "../components/Faq";
 import { Progress } from "../components/ui/progress";
 import { useEffect, useRef, useState } from "react";
 import { Schedule } from "../components/Schedule";
+import { AboutUs } from "../components/AboutUs";
 
 export const LandingPage = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -17,9 +18,9 @@ export const LandingPage = () => {
   const pricingRef = useRef<HTMLDivElement>(null);
   const scheduleRef = useRef<HTMLDivElement>(null);
   const faqRef = useRef<HTMLDivElement>(null);
-  const informationRef = useRef<HTMLDivElement>(null);
-  // const eventBloggingRef = useRef<HTMLDivElement>(null);
-  // const eventTodoRef = useRef<HTMLDivElement>(null);
+  const aboutusRef = useRef<HTMLDivElement>(null);
+  const eventCalendarRef = useRef<HTMLDivElement>(null);
+  const eventTodoRef = useRef<HTMLDivElement>(null);
   // const footerRef = useRef<HTMLDivElement>(null);
 
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -37,35 +38,41 @@ export const LandingPage = () => {
 
   return (
     <>
-      <Navbar featureRef={featuresRef} pricingRef={pricingRef} faqRef={faqRef} informationRef={informationRef} />
+      <Navbar featureRef={featuresRef} pricingRef={pricingRef} faqRef={faqRef} aboutusRef={aboutusRef} />
       <Progress
         value={scrollProgress}
         max={100}
         className={`z-10 h-1 fixed top-16 ${scrollProgress > 0 ? "block transition-all duration-300" : "hidden"}`}
       />
       <div className="pt-16">
-        <div id="hero" ref={heroRef}>
+        <div ref={heroRef}>
           <Hero />
         </div>
-        <div id="numbers" ref={numbersRef}>
+        <div ref={numbersRef}>
           <Numbers />
         </div>
-        <div id="features" ref={featuresRef}>
+        <div ref={featuresRef}>
           <Features />
         </div>
-        {/* <Pricing /> */}
-        <div id="pricing" ref={pricingRef}>
-          <NewPricing />
+        <div ref={eventCalendarRef}>
+          <Features />
         </div>
-        <div id="schedule" ref = {scheduleRef}>
+        <div ref={eventTodoRef}>
+          <Features />
+        </div>
+        <div ref={scheduleRef}>
           <Schedule />
         </div>
-        <div id="faq" ref={faqRef}>
+        <div ref={aboutusRef}>
+          <AboutUs />
+        </div>
+        <div ref={pricingRef}>
+          <NewPricing />
+        </div>
+        <div ref={faqRef}>
           <Faq />
         </div>
-        <div id="information" ref={informationRef}>
-          <Information />
-        </div>
+        <Information />
         <Footer />
       </div>
     </>

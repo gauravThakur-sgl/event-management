@@ -12,10 +12,10 @@ interface INavbarProps {
   featureRef: React.RefObject<HTMLDivElement>;
   pricingRef: React.RefObject<HTMLDivElement>;
   faqRef: React.RefObject<HTMLDivElement>;
-  informationRef: React.RefObject<HTMLDivElement>;
+  aboutusRef: React.RefObject<HTMLDivElement>;
 }
 
-export const Navbar = ({ featureRef, pricingRef, faqRef, informationRef }: INavbarProps) => {
+export const Navbar = ({ featureRef, pricingRef, faqRef, aboutusRef }: INavbarProps) => {
   const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
@@ -59,7 +59,7 @@ export const Navbar = ({ featureRef, pricingRef, faqRef, informationRef }: INavb
     {
       title: "About us",
       link: "/#information",
-      ref: informationRef,
+      ref: aboutusRef,
       subFeatures: [],
     },
   ];
@@ -82,13 +82,13 @@ export const Navbar = ({ featureRef, pricingRef, faqRef, informationRef }: INavb
                       <NavigationMenuTrigger className="bg-green-600 hover:bg-green-600 hover:text-white text-lg font-normal z-100">
                         {item.title}
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent> 
+                      <NavigationMenuContent>
                         <ul>
                           {item.subFeatures.map((data, index) => (
                             <li
                               key={index}
                               onClick={() => scrollToRef(item.ref)}
-                              className="cursor-pointer text-nowrap p-2 bg-green-600 text-white"
+                              className="cursor-pointer text-sm text-nowrap p-2 bg-green-600 hover:bg-green-500 transition-all duration-300 text-white"
                             >
                               <NavigationMenuLink>{data.title}</NavigationMenuLink>
                             </li>

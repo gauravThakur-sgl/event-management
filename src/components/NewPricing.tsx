@@ -13,7 +13,7 @@ export const NewPricing = () => {
   };
   const { isMobile, isLaptop } = useScreenDetector();
   return (
-    <div className="break-points min-h-screen py-24 font-funnel-sans snap-center">
+    <div className="break-points min-h-screen pt-10 font-funnel-sans snap-center">
       <div className="">
         <h2 className="leading-snug section-title">
           Choose the right event <span className="rounded-lg px-2 bg-green-500 text-white text-nowrap">{""}Planning</span> for you
