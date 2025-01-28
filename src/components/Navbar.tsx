@@ -79,10 +79,10 @@ export const Navbar = ({ featureRef, pricingRef, faqRef, informationRef }: INavb
                 <NavigationMenuItem key={index}>
                   {item.title === "Features" && (
                     <div>
-                      <NavigationMenuTrigger className="bg-green-600 hover:bg-green-600 hover:text-white text-lg font-normal">
+                      <NavigationMenuTrigger className="bg-green-600 hover:bg-green-600 hover:text-white text-lg font-normal z-100">
                         {item.title}
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent>
+                      <NavigationMenuContent> 
                         <ul>
                           {item.subFeatures.map((data, index) => (
                             <li

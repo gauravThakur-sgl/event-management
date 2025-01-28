@@ -41,7 +41,7 @@ export const LandingPage = () => {
       <Progress
         value={scrollProgress}
         max={100}
-        className={`z-50 h-1 fixed top-16 ${scrollProgress > 0 ? "block transition-all duration-300" : "hidden"}`}
+        className={`z-10 h-1 fixed top-16 ${scrollProgress > 0 ? "block transition-all duration-300" : "hidden"}`}
       />
       <div className="pt-16">
         <div id="hero" ref={heroRef}>
