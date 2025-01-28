@@ -16,9 +16,9 @@ export const Hero = () => {
           <span className="inline-flex justify-center items-center text-lg font-medium">Get Started</span>
         </Button>
       </div>
-      <div className="pt-10 flex justify-center items-center m-4">
+      <div className="flex justify-center items-center m-4">
         <div className="bg-transparent rounded-lg shadow-2xl">
-          <img src="/product-image.png" alt="Hero" />
+          <img src="/product-image.png" alt="Hero"/>
         </div>
       </div>
     </div>

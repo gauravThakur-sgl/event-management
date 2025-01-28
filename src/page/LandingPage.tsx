@@ -8,12 +8,14 @@ import { NewPricing } from "../components/NewPricing";
 import { Faq } from "../components/Faq";
 import { Progress } from "../components/ui/progress";
 import { useEffect, useRef, useState } from "react";
+import { Schedule } from "../components/Schedule";
 
 export const LandingPage = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const numbersRef = useRef<HTMLDivElement>(null);
   const featuresRef = useRef<HTMLDivElement>(null);
   const pricingRef = useRef<HTMLDivElement>(null);
+  const scheduleRef = useRef<HTMLDivElement>(null);
   const faqRef = useRef<HTMLDivElement>(null);
   const informationRef = useRef<HTMLDivElement>(null);
   // const eventBloggingRef = useRef<HTMLDivElement>(null);
@@ -54,6 +56,9 @@ export const LandingPage = () => {
         {/* <Pricing /> */}
         <div id="pricing" ref={pricingRef}>
           <NewPricing />
+        </div>
+        <div id="schedule" ref = {scheduleRef}>
+          <Schedule />
         </div>
         <div id="faq" ref={faqRef}>
           <Faq />
