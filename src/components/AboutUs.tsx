@@ -4,9 +4,9 @@ import { teamData } from "../config/teamData.ts";
 
 export const AboutUs = () => {
   return (
-    <div className="break-points py-10 bg-gradient-to-b from-white to-green-50">
+    <div className="break-points py-10">
       <h2 className="leading-snug section-title">
-        Meet Our beautiful <span className="rounded-lg px-2 bg-green-500 text-white text-nowrap">Team</span>
+        <span className="rounded-lg px-2 bg-green-500 text-white text-nowrap">About</span> Us
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-start gap-4 py-10 p-4">
         <Card className="p-6 space-y-10 border-none bg-gray-50">
@@ -51,24 +51,6 @@ export const AboutUs = () => {
             ))}
           </div>
         </Card>
-        {/* <div className="flex flex-col md:flex-row lg:flex-col justify-center items-start lg:items-center gap-4 w-full">
-          <Card className="w-full">
-            <img src="/team.png" alt="" className="object-fill h-96 w-96" />
-          </Card>
-          <Card className="w-full h-full">
-            <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-2 p-4">
-              {teamData.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col justify-center items-start gap-2 p-4 rounded-lg hover:bg-gray-100 tansition-all duration-300"
-                >
-                  <h3 className="font-semibold text-3xl">{item.number}</h3>
-                  <p className="text-gray-500 text-lg">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </Card>
-        </div> */}
       </div>
     </div>
   );

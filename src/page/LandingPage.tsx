@@ -1,6 +1,6 @@
 import { Hero } from "../components/Hero";
 import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
+import { Header } from "../components/Header";
 import { Numbers } from "../components/Numbers";
 import Information from "../components/Information";
 import { Features } from "../components/Features";
@@ -10,6 +10,8 @@ import { Progress } from "../components/ui/progress";
 import { useEffect, useRef, useState } from "react";
 import { Schedule } from "../components/Schedule";
 import { AboutUs } from "../components/AboutUs";
+import { EventCalendar } from "../components/EventCalendar";
+import { TodoEvent } from "../components/TodoEvent";
 
 export const LandingPage = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -38,7 +40,7 @@ export const LandingPage = () => {
 
   return (
     <>
-      <Navbar featureRef={featuresRef} pricingRef={pricingRef} faqRef={faqRef} aboutusRef={aboutusRef} />
+      <Header featureRef={featuresRef} pricingRef={pricingRef} faqRef={faqRef} aboutusRef={aboutusRef} eventCalendarRef={eventCalendarRef} eventTodoRef={eventTodoRef} />
       <Progress
         value={scrollProgress}
         max={100}
@@ -55,10 +57,10 @@ export const LandingPage = () => {
           <Features />
         </div>
         <div ref={eventCalendarRef}>
-          <Features />
+          <EventCalendar />
         </div>
         <div ref={eventTodoRef}>
-          <Features />
+          <TodoEvent />
         </div>
         <div ref={scheduleRef}>
           <Schedule />

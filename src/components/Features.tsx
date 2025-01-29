@@ -1,6 +1,4 @@
 import { cardData } from "../config/cardData";
-import { EventCalendar } from "./EventCalendar";
-import { TodoEvent } from "./TodoEvent";
 
 export const Features = () => {
   const featureText = "text-sm lg:text-base text-gray-800 m-1 md:mb-2";
@@ -17,11 +15,11 @@ export const Features = () => {
           <div className={`${card.background} break-points relative grid grid-cols-1 lg:grid-cols-3 gap-2 py-20 mt-10`}>
             <div className="space-y-6 z-10">
               {card.features.slice(0, 4).map((feature, index) => (
-                <div key={index} className={`${cardStyle} flex flex-col justify-center items-center`}>
-                  <span className={`h-6 w-6`}>
-                    <img src={feature.icon} alt="" className="text-green-600" />
-                  </span>
-                  <div className={`${featureTitle} flex flex-col justify-center item-center gap-2`}>
+                <div key={index} className={`${cardStyle} flex flex-col`}>
+                  <div className={`${featureTitle} flex item-center gap-2`}>
+                    <span className={`h-6 w-6 ${card.iconColor}`}>
+                      <img src={feature.icon} alt="" className={`${card.iconColor}`} />
+                    </span>
                     {feature.title}
                   </div>
                   <p className={`${featureText}`}>{feature.description}</p>
@@ -53,8 +51,8 @@ export const Features = () => {
           </div>
         </div>
       ))}
-      <EventCalendar />
-      <TodoEvent />
+      {/* <EventCalendar />
+      <TodoEvent /> */}
     </div>
   );
 };

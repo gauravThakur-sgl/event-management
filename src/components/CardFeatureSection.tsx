@@ -1,11 +1,7 @@
-// import { cardData } from "../config/cardData";
-// import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
-
 import { EventCalendar } from "./EventCalendar";
 import { Features } from "./Features";
 import { TodoEvent } from "./TodoEvent";
 
-// import { Features } from "./Features";
 export const CardFeatureSection = () => {
   return (
     <>

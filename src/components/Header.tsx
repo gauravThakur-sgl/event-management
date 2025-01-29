@@ -13,9 +13,18 @@ interface INavbarProps {
   pricingRef: React.RefObject<HTMLDivElement>;
   faqRef: React.RefObject<HTMLDivElement>;
   aboutusRef: React.RefObject<HTMLDivElement>;
+  eventCalendarRef: React.RefObject<HTMLDivElement>;
+  eventTodoRef: React.RefObject<HTMLDivElement>;
 }
 
-export const Navbar = ({ featureRef, pricingRef, faqRef, aboutusRef }: INavbarProps) => {
+export const Header = ({
+  featureRef,
+  pricingRef,
+  faqRef,
+  aboutusRef,
+  eventCalendarRef,
+  eventTodoRef,
+}: INavbarProps) => {
   const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
@@ -34,13 +43,13 @@ export const Navbar = ({ featureRef, pricingRef, faqRef, aboutusRef }: INavbarPr
         },
         {
           title: "Event Blogging",
-          link: "/#features",
-          ref: featureRef,
+          link: "/#blogging",
+          ref: eventCalendarRef,
         },
         {
           title: "Event Todo",
-          link: "/#features",
-          ref: featureRef,
+          link: "/#todo",
+          ref: eventTodoRef,
         },
       ],
     },
@@ -87,7 +96,7 @@ export const Navbar = ({ featureRef, pricingRef, faqRef, aboutusRef }: INavbarPr
                           {item.subFeatures.map((data, index) => (
                             <li
                               key={index}
-                              onClick={() => scrollToRef(item.ref)}
+                              onClick={() => scrollToRef(data.ref)}
                               className="cursor-pointer text-sm text-nowrap p-2 bg-green-600 hover:bg-green-500 transition-all duration-300 text-white"
                             >
                               <NavigationMenuLink>{data.title}</NavigationMenuLink>
@@ -109,6 +118,7 @@ export const Navbar = ({ featureRef, pricingRef, faqRef, aboutusRef }: INavbarPr
             </NavigationMenuList>
           </NavigationMenu>
         </div>
+
         <div className="flex justify-center items-center gap-2 px-2">
           <Menu className="md:hidden" />
           <div className="hidden md:block">
