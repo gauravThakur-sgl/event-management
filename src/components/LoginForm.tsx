@@ -1,10 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import { cn } from "../lib/utils";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 
+
 export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRef<"div">) {
+  const navigate = useNavigate();
+  const handleForgotPassword = () => {
+    navigate("/forgot-password");
+  };
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
@@ -18,11 +24,12 @@ export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRe
               <div className="grid gap-2 ">
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" type="email" placeholder="user@example.com" required />
+                {/* {errors && <span>{errors.message}</span>} */}
               </div>
               <div className="grid gap-2">
                 <div className="flex items-center">
                   <Label htmlFor="password">Password</Label>
-                  <a href="#" className="ml-auto inline-block text-sm underline-offset-4 hover:underline">
+                  <a href="#" className="ml-auto inline-block text-sm underline-offset-4 hover:underline" onClick={handleForgotPassword}>
                     Forgot your password?
                   </a>
                 </div>
