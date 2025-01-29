@@ -23,7 +23,6 @@ export const LandingPage = () => {
   const aboutusRef = useRef<HTMLDivElement>(null);
   const eventCalendarRef = useRef<HTMLDivElement>(null);
   const eventTodoRef = useRef<HTMLDivElement>(null);
-  // const footerRef = useRef<HTMLDivElement>(null);
 
   const [scrollProgress, setScrollProgress] = useState(0);
 

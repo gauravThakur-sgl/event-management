@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export const Hero = () => {
   return (
-    <div className="md:h-screen overflow-hidden bg-gradient-to-b from-gray-100 to-green-100 rounded-b-3xl py-20">
+    <div className="md:h-screen overflow-hidden bg-gradient-to-b from-gray-100 to-green-100 rounded-b-3xl pt-20">
       <div className="flex flex-col justify-center items-center mx-4">
         <h2 className="leading-snug section-title">
           <span className="font-light">Simplify </span>Your WorkFlow <br /> Maximize your Choose the right event{" "}

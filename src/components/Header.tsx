@@ -81,6 +81,7 @@ export const Header = ({
           </span>
           {/* Event Management */}
         </div>
+        
         <div className="hidden lg:block">
           <NavigationMenu className="flex justify-center items-center gap-4 text-lg text-white bg-green-600">
             <NavigationMenuList>
