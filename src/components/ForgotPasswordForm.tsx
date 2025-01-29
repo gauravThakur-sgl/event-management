@@ -5,10 +5,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 
-export function ResetPasswordForm({ className, ...props }: React.ComponentPropsWithoutRef<"div">) {
+export function ForgotPasswordForm({ className, ...props }: React.ComponentPropsWithoutRef<"div">) {
   const navigate = useNavigate();
   const handleReturnToLogin = () => {
     navigate("/login");
+  };
+  const handleMoveToOtp = () => {
+    navigate("/otp");
   };
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
@@ -26,7 +29,11 @@ export function ResetPasswordForm({ className, ...props }: React.ComponentPropsW
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" type="email" placeholder="user@example.com" required />
               </div>
-              <Button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white">
+              <Button
+                type="submit"
+                className="w-full bg-green-500 hover:bg-green-600 text-white"
+                onClick={handleMoveToOtp}
+              >
                 Submit
               </Button>
             </div>
