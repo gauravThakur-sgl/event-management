@@ -8,12 +8,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     fontFamily: {
       sans: ["sans-serif", "system-ui"],
       roboto: ["Roboto", "sans-serif"],
       "funnel-sans": ["Funnel Sans", "sans-serif"]
     },
     extend: {
+      backgroundImage: {
+        'login-image': "url('/authBackground.png')"
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

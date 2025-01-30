@@ -10,7 +10,7 @@ export const Schedule = () => {
             From effortless event organization to seamless calendar integration, Event management makes staying top of
             your schedule easier and more effective than ever before
           </p>
-          <div className="flex flex-col items-center justify-start md:flex-row w-full gap-2 pt-5">
+          <div className="flex flex-col items-center justify-center lg:justify-start md:flex-row w-full gap-2 pt-5">
             <Button className="bg-white text-black hover:bg-gray-50 rounded-xl px-10 py-6 shadow">
               Sign up for free
             </Button>
@@ -22,7 +22,7 @@ export const Schedule = () => {
             </Button>
           </div>
         </div>
-        <div className="hidden md:block lg:relative">
+        <div className="relative hidden lg:block">
           <div className="absolute -right-40 -bottom-80 bg-transparent shadow-2xl rounded-2xl">
             <img src="/product-image.png" alt="Hero" className="" />
           </div>

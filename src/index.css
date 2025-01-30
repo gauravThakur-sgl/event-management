@@ -62,8 +62,11 @@
   .break-points {
     @apply px-6 md:px-6 xl:px-32 2xl:px-56 mx-auto;
   }
+  .event-points {
+    @apply px-2 md:px-6 xl:px-32 2xl:px-56 mx-auto;
+  }
   .pricing-width {
-    @apply w-[390px] md:w-[500px]
+    @apply w-[390px] md:w-[500px];
   }
   .scroll-height {
     @apply h-[600px];
@@ -81,7 +84,7 @@
     @apply inset-0 bg-[linear-gradient(to_right,#FFFFFF1A_1px,transparent_1px),linear-gradient(to_bottom,#FFFFFF1A_1px,transparent_1px)] bg-[size:24px_24px];
   }
   .section-title {
-    @apply font-medium text-3xl lg:text-5xl tracking-tight text-center px-2 xl:px-64 ;
+    @apply font-medium text-3xl lg:text-5xl tracking-tight text-center px-2 xl:px-64;
   }
   .section-description {
     @apply text-gray-500 text-lg mt-6 text-center;

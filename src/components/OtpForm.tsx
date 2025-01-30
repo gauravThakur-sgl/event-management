@@ -3,6 +3,7 @@ import { cn } from "../lib/utils";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from "./ui/inputOtp";
+import { proceedToLogin } from "../hooks/userHook";
 
 export function OtpForm({ className, ...props }: React.ComponentPropsWithoutRef<"div">) {
   const navigate = useNavigate();
@@ -19,10 +20,10 @@ export function OtpForm({ className, ...props }: React.ComponentPropsWithoutRef<
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form className="pb-28 pt-2">
+          <form className="pb-28 pt-2" onSubmit={handleProceed}>
             <div className="flex flex-col gap-6">
               <div className="grid gap-2 justify-center">
-                <InputOTP maxLength={6}>
+                <InputOTP maxLength={6} required>
                   <InputOTPGroup>
                     <InputOTPSlot index={0} />
                     <InputOTPSlot index={1} />
@@ -36,17 +37,14 @@ export function OtpForm({ className, ...props }: React.ComponentPropsWithoutRef<
                   </InputOTPGroup>
                 </InputOTP>
               </div>
-              <Button
-                type="submit"
-                className="w-full bg-green-500 hover:bg-green-600 text-white"
-                onClick={handleProceed}
-              >
+              <Button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white">
                 Proceed
               </Button>
             </div>
             <Button
               variant="outline"
               className="w-full text-green-600 mt-2 border-none hover:text-green-600 hover:bg-white hover:underline"
+              onClick={() => proceedToLogin(navigate)}
             >
               Return to Login
             </Button>

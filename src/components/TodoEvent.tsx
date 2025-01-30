@@ -4,14 +4,14 @@ export const TodoEvent = () => {
   const featureTitle = "text-base font-semibold lg:font-semibold text-gray-600";
   const cardStyle = "p-3 bg-transparent rounded-xl hover:shadow-md transition-shadow-xl duration-200";
   return (
-    <div className="md:mx-4 xl:mx-8 2xl:mx-40">
+    <div className="event-points">
       {todoEventData.map((card, index) => (
         <div key={index} className={`pb-10 last:mb-0 m-2 mx-4 rounded-b-2xl font-funnel-sans`}>
           <h2 className="section-title leading-snug text-gray-800 text-center my-10">
             Stay productive and organized with our{" "}
             <span className="bg-green-500 text-white px-2 rounded-lg text-nowrap">to-do</span> list feature.
           </h2>
-          <div className={`${card.background} break-points relative grid grid-cols-1 lg:grid-cols-3 gap-2 py-10`}>
+          <div className={`${card.background} px-2 md:px-8 relative grid grid-cols-1 lg:grid-cols-3 gap-2 py-10`}>
             <div className="space-y-6 z-10">
               {card.features.slice(0, 4).map((feature, index) => (
                 <div key={index} className={`${cardStyle}`}>

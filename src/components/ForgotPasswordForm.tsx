@@ -23,17 +23,13 @@ export function ForgotPasswordForm({ className, ...props }: React.ComponentProps
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form className="pb-28 pt-2">
+          <form className="pb-28 pt-2" onSubmit={handleMoveToOtp}>
             <div className="flex flex-col gap-6">
               <div className="grid gap-2 ">
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" type="email" placeholder="user@example.com" required />
               </div>
-              <Button
-                type="submit"
-                className="w-full bg-green-500 hover:bg-green-600 text-white"
-                onClick={handleMoveToOtp}
-              >
+              <Button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white">
                 Submit
               </Button>
             </div>
