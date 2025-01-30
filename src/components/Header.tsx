@@ -74,16 +74,18 @@ export const Header = ({
       subFeatures: [],
     },
   ];
+
   const handleLogin = () => {
     navigate("/login");
   };
+
   return (
     <>
       <div className="flex justify-between items-center bg-green-600 h-16 p-2 lg:p-4 md:px-6 xl:px-32 2xl:px-56 fixed top-0 w-full z-20">
         <div className="flex justify-center items-center font-bold text-white gap-2 cursor-pointer">
-          <span>
+          <a href="/">
             <img src="/logo.png" alt="Event Management Logo" height={40} width={40} />
-          </span>
+          </a>
           {/* Event Management */}
         </div>
 

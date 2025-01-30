@@ -21,7 +21,7 @@ export const AboutUs = () => {
         <span className="rounded-lg px-2 bg-green-500 text-white text-nowrap">About</span> Us
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-start gap-4 py-10 p-2">
-        <Card className="p-2 space-y-10 border-none bg-gray-50">
+        <Card className="p-2 space-y-10 border-none">
           <span className="w-fill flex justify-center items-center">
             <img src="/team.png" alt="" className="object-fill h-96 w-96" />
           </span>

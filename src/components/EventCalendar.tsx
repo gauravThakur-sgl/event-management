@@ -4,7 +4,7 @@ export const EventCalendar = () => {
   const featureTitle = "text-base font-semibold lg:font-semibold text-gray-600";
   const cardStyle = "p-3 bg-transparent rounded-xl hover:shadow-md transition-shadow-xl duration-200";
   return (
-    <div className="events-points">
+    <div className="event-points">
       {calendarEvent.map((card, index) => (
         <div key={index} className={`pb-10 last:mb-0 m-2 mx-4 pt-5 rounded-b-2xl font-funnel-sans`}>
           <h2 className="section-title leading-snug pb-10">

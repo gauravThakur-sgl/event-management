@@ -5,3 +5,6 @@ export const proceedToLogin = (navigate: NavigateFunction) => {
 export const proceedToSignup = (navigate: NavigateFunction) => {
   navigate("/signup");
 };
+export const proceedToHome = (navigate: NavigateFunction) => {
+  navigate("/");
+};

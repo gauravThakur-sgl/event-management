@@ -39,7 +39,7 @@ export const cardData = [
 
   {
     description: "Express your ideas and share valuable insights with our blogging feature.",
-    background: "bg-gradient-to-r from-purple-50 to-purple-200",
+    background: "",
     iconColor: "text-purple-500",
     features: [
       {

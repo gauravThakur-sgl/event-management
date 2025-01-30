@@ -1,7 +1,7 @@
 export const calendarEvent = [
   {
     description: "Effortlessly organize your schedule with our event calendar feature.",
-    background: "bg-gradient-to-r from-white to-blue-100",
+    background: "",
     iconColor: "text-blue-500",
     features: [
       {

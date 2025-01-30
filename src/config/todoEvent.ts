@@ -1,6 +1,6 @@
 export const todoEventData = [
   {
-    background: "bg-gradient-to-l from-white to-teal-100",
+    background: "",
     iconColor: "text-green-500",
     features: [
       {

@@ -7,7 +7,7 @@ export const Faq = () => {
     setIsOpened(isOpened === index ? undefined : index);
   };
   return (
-    <div className="break-points pb-20">
+    <div className="break-points py-20">
       <div>
         <h2 className="section-title leading-snug">
           <span className="text-white text-medium bg-green-500 rounded-lg px-2">Frequently</span> Asked Questions

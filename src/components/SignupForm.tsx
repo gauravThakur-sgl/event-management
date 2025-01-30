@@ -24,6 +24,7 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
 
   const onSubmit = (data: SignupFormData) => {
     console.log("Form data:", data);
+    proceedToLogin(navigate);
   };
 
   return (
@@ -37,6 +38,16 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col gap-6">
               <div className="grid gap-2">
+                <Label htmlFor="name">Name</Label>
+                <Input id="name" type="text" {...register("name")} placeholder="Enter your name..." />
+                {errors.name && <span className="text-sm text-red-600">{errors.name.message}</span>}
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="name">Phone Number</Label>
+                <Input id="number" type="text" {...register("phone")} placeholder="Enter your phone number..." />
+                {errors.phone && <span className="text-sm text-red-600">{errors.phone.message}</span>}
+              </div>
+              <div className="grid gap-2">
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" type="email" {...register("email")} placeholder="user@example.com" />
                 {errors.email && <span className="text-sm text-red-600">{errors.email.message}</span>}
@@ -45,14 +56,14 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
                 <div className="flex items-center">
                   <Label htmlFor="password">Password</Label>
                 </div>
-                <Input id="password" type="password" {...register("password")} />
+                <Input id="password" type="password" {...register("password")} placeholder="Enter your password..." />
                 {errors.password && <span className="text-sm text-red-600">{errors.password.message}</span>}
               </div>
               <div className="grid gap-2">
                 <div className="flex items-center">
                   <Label htmlFor="password">Confirm Password</Label>
                 </div>
-                <Input id="password" type="password" {...register("password")} />
+                <Input id="password" type="password" {...register("confirm")} placeholder="Confirm your password..." />
                 {errors.confirm && <span className="text-sm text-red-600">{errors.confirm.message}</span>}
               </div>
               <Button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white">
