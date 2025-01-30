@@ -1,11 +1,7 @@
 import { z } from "zod";
 
 export const loginSchema = z.object({
-  email: z
-    .string()
-    .nonempty({ message: "Email cannot be empty" })
-    .email({ message: "Invalid email address" })
-    .regex(/^[a-zA-Z0-9._%+-]+@gmail\.com$/, { message: "Only gmail accounts are allowed" }),
+  email: z.string().nonempty({ message: "Email cannot be empty" }).email({ message: "Invalid email address" }),
   password: z
     .string()
     .nonempty({ message: "password cannot be empty" })
@@ -44,8 +40,7 @@ export const signupSchema = z
     email: z
       .string()
       .nonempty({ message: "Email cannot be empty" })
-      .email({ message: "Invalid email address" })
-      .regex(/^[a-zA-Z0-9._%+-]+@gmail\.com$/, { message: "Only gmail accounts are allowed" }),
+      .email({ message: "Invalid email address" }),
     password: z
       .string()
       .nonempty({ message: "Password cannot be empty" })

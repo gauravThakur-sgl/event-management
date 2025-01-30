@@ -100,12 +100,13 @@ export const Header = ({
                         {item.title}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
+                        <div className="text-white bg-green-600 p-2">Features</div>
                         <ul>
                           {item.subFeatures.map((data, index) => (
                             <li
                               key={index}
                               onClick={() => scrollToRef(data.ref)}
-                              className="cursor-pointer text-sm text-nowrap p-2 bg-green-600 hover:bg-green-500 transition-all duration-300 text-white"
+                              className="cursor-pointer text-base text-nowrap p-2 px-4 bg-green-600 hover:bg-green-400 transition-all duration-300 text-white"
                             >
                               <NavigationMenuLink>{data.title}</NavigationMenuLink>
                             </li>
