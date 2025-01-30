@@ -106,7 +106,7 @@ export const Header = ({
                             <li
                               key={index}
                               onClick={() => scrollToRef(data.ref)}
-                              className="cursor-pointer text-base text-nowrap p-2 px-4 bg-green-600 hover:bg-green-400 transition-all duration-300 text-white"
+                              className="cursor-pointer text-base text-nowrap p-2 px-4 bg-green-600 hover:bg-green-500 hover:rounded-md transition-all duration-500 text-white"
                             >
                               <NavigationMenuLink>{data.title}</NavigationMenuLink>
                             </li>

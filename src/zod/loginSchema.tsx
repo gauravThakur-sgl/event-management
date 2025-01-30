@@ -36,7 +36,7 @@ export const signupSchema = z
     phone: z
       .string()
       .nonempty({ message: "Phone cannot be empty" })
-      .min(10, { message: "Phone number must be at least 10 characters long" }),
+      .max(10, { message: "Phone number must be at most 10 characters long" }),
     email: z
       .string()
       .nonempty({ message: "Email cannot be empty" })
