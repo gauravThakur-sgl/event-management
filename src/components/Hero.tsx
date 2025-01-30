@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 export const Hero = () => {
   const navigate = useNavigate();
   const handleGetStarted = () => {
-    navigate("/login");
+    navigate("/signup");
   };
   return (
     <div className="md:h-screen overflow-hidden bg-gradient-to-b from-gray-100 to-green-100 rounded-b-3xl pt-20">

@@ -7,34 +7,30 @@ import { Input } from "./ui/input";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { loginSchema } from "../zod/loginSchema";
-import { proceedToSignup } from "../hooks/userHook";
+import { signupSchema } from "../zod/loginSchema";
+import { proceedToLogin } from "../hooks/userHook";
 
-type LoginFormData = z.infer<typeof loginSchema>;
+type SignupFormData = z.infer<typeof signupSchema>;
 
-export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRef<"div">) {
+export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutRef<"div">) {
   const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<LoginFormData>({
-    resolver: zodResolver(loginSchema),
+  } = useForm<SignupFormData>({
+    resolver: zodResolver(signupSchema),
   });
 
-  const onSubmit = (data: LoginFormData) => {
+  const onSubmit = (data: SignupFormData) => {
     console.log("Form data:", data);
-  };
-
-  const handleForgotPassword = () => {
-    navigate("/forgot-password");
   };
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Login</CardTitle>
+        <CardHeader className="text-center">
+          <CardTitle className="text-2xl">Signup</CardTitle>
           <CardDescription>Enter your email below to login to your account</CardDescription>
         </CardHeader>
         <CardContent>
@@ -48,19 +44,19 @@ export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRe
               <div className="grid gap-2">
                 <div className="flex items-center">
                   <Label htmlFor="password">Password</Label>
-                  <button
-                    type="button"
-                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                    onClick={handleForgotPassword}
-                  >
-                    Forgot your password?
-                  </button>
                 </div>
                 <Input id="password" type="password" {...register("password")} />
                 {errors.password && <span className="text-sm text-red-600">{errors.password.message}</span>}
               </div>
+              <div className="grid gap-2">
+                <div className="flex items-center">
+                  <Label htmlFor="password">Confirm Password</Label>
+                </div>
+                <Input id="password" type="password" {...register("password")} />
+                {errors.confirm && <span className="text-sm text-red-600">{errors.confirm.message}</span>}
+              </div>
               <Button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white">
-                Login
+                Signup
               </Button>
               <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
                 <span className="relative z-10 bg-background px-2 text-muted-foreground">Or continue with</span>
@@ -98,10 +94,10 @@ export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRe
               </div>
             </div>
             <div className="mt-4 text-center text-sm">
-              Don&apos;t have an account?{" "}
-              <a href="#" className="underline underline-offset-4" onClick={() => proceedToSignup(navigate)}>
-                Sign up
-              </a>
+              Already have an account?{" "}
+              <span className="underline underline-offset-4 cursor-pointer" onClick={() => proceedToLogin(navigate)}>
+                Login
+              </span>
             </div>
           </form>
         </CardContent>
